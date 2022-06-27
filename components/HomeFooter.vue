@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 <template>
   <footer style="background-color: #ffffff">
-    <div class="container">
+    <div class="container-fluid">
       <div class="col-md-12">
         <div class="row container">
           <div class="col-lg-6 col-md-8 profile">
@@ -151,7 +151,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .profile {
   color: #828282;
 }

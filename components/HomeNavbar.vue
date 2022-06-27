@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top">
-    <div class="container-fluid">
+  <b-navbar type="light" class="navbar navbar-expand-xl navbar-light fixed-top" toggleable="xl">
+    <b-container fluid :class="expanded ? 'bg-primary': null">
       <router-link class="navbar-brand" to="/" @click="goto('home')">
         <img
           :src="require('@/assets/img/logo/new-logo.svg')"
@@ -8,71 +8,59 @@
           class="image-navbar"
         >
       </router-link>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <img
-          :src="require('@/assets/img/icons/toggler-icon.png')"
-          alt="toggler icon"
-        >
-      </button>
-      <div id="navbarNav" class="collapse navbar-collapse nav-menu">
-        <div class="close-toggler">
-          <button
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-label="Close"
+      <b-navbar-toggle target="navbar-toggle-collapse">
+        <template #default="{ expanded }">
+          <img
+            v-if="expanded"
+            :src="require('@/assets/img/icons/close-icon.png')"
+            alt="close icon"
           >
-            <img
-              :src="require('@/assets/img/icons/close-icon.png')"
-              alt="close icon"
+          <img
+            v-else
+            :src="require('@/assets/img/icons/toggler-icon.png')"
+            alt="toggler icon"
+          >
+        </template>
+      </b-navbar-toggle>
+      <b-collapse id="navbar-toggle-collapse" class="collapse navbar-collapse nav-menu" is-nav>
+        <b-navbar-nav class="navbar-nav  ms-auto mb-2 mb-lg-0">
+          <div class="close-toggler" style="justify-content: end; margin-top:-16px">
+            <button
+              v-b-toggle.navbar-toggle-collapse
+              type="button"
+              aria-label="Close"
             >
-          </button>
-        </div>
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li
+              <img
+                :src="require('@/assets/img/icons/close-icon.png')"
+                alt="close icon"
+              >
+            </button>
+          </div>
+          <b-nav-item
             v-for="(items, index) in listMenu"
             :key="index + 1"
             class="nav-item"
           >
             <a
               :id="items.id"
-              :href="items.id !== 'cek-ongkir' ? `/#${items.value}` : `/${items.value}`"
               :class="menu === items.id ? 'nav-link active' : 'nav-link'"
-              @click="setMenuActive(items.id)"
+              @click="setMenuActive(items.id, items.value)"
             >
               {{ items.title }}
             </a>
-          </li>
-          <!-- <li class="nav-item">
-            <router-link
-              id="cek-ongkir"
-              class="nav-link"
-              to="/cek-ongkir"
-              @click="setRouterActive('cek-ongkir')"
-            >
-              Cek Ongkir
-            </router-link>
-          </li> -->
-        </ul>
-        <button
-          class="btn btn-outline-primary btn-sign-in"
-          @click="openWindow('https://partner.komerce.id/')"
-        >
-          Masuk
-        </button>
-      </div>
-    </div>
-  </nav>
+          </b-nav-item>
+        </b-navbar-nav>
+
+        <b-navbar-nav class="">
+          <b-button variant="outline-primary" class="btn btn-outline-primary btn-sign-in">
+            Button
+          </b-button>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-container>
+  </b-navbar>
 </template>
+
 <script>
 
 export default {
@@ -122,11 +110,6 @@ export default {
     }
   },
   mounted () {
-    // if (this.$route.hash && this.$route.hash !== "#") {
-    //   this.goto(this.$route.hash.substring(1));
-    // } else {
-    //   this.toggleClassNav("navmenuhome");
-    // }
     if (window.history.state.current === '/cek-ongkir') {
       this.menu = 'cek-ongkir'
     }
@@ -151,30 +134,12 @@ export default {
     },
     goto (id) {
       this.hashrouteid = id
-      // let offsetPosition = 0;
-      // document.getElementById(id).scrollIntoView({ behavior: "smooth" });
       const element = document.getElementById(`${id}section`)
       const headerOffset = 80 // height container header nav
       if (element) {
         const elementPosition = element.getBoundingClientRect().top
-        // console.log('window.pageYOffset', window.pageYOffset)
-        // console.log('elementPosition', elementPosition)
         const offsetPosition =
           elementPosition + window.pageYOffset - headerOffset
-        // console.log('offsetPosition', offsetPosition)
-        // switch(id) {
-        //   case 'service':
-        //     offsetPosition = 600
-        //     break;
-        //   case 'alur':
-        //     offsetPosition = 1800
-        //     break;
-        //   case 'feature':
-        //     offsetPosition = 2600
-        //     break;
-        //   default:
-        //     break;
-        // }
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
@@ -185,16 +150,20 @@ export default {
       window.open(url)
     },
     onItemChanged (event, currentItem, lastActiveItem) {
+      // eslint-disable-next-line no-console
       console.log(event, currentItem, lastActiveItem)
       // here you have access to everything you need regarding that event
     },
-    setMenuActive (id) {
+    setMenuActive (id, value) {
       if (this.navBerandaIsActive === true) {
         this.navBerandaIsActive = false
       } else {
         this.navBerandaIsActive = true
       }
       this.menu = id
+      id !== 'cek-ongkir'
+        ? this.$router.push(`/#${value}`)
+        : this.$router.push(`/${value}`)
     },
     // eslint-disable-next-line require-await
     async setRouterActive (link) {
@@ -210,19 +179,21 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 .navbar {
   background-color: #ffffff;
   max-height: 80px;
   font-family: "Poppins", sans-serif;
 }
-.image-navbar {
+
+.image-navbar{
   margin-left: 4vw;
 }
 .btn-sign-in {
   width: 151px;
   height: 56px;
-  margin: auto 5vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 .nav-link {
   cursor: pointer;
@@ -248,7 +219,7 @@ export default {
 .close-toggler {
   display: none;
 }
-@media only screen and (max-width: 1199.98px) {
+@media only screen and (max-width: 998px) {
   .close-toggler {
     display: flex;
     float: right;

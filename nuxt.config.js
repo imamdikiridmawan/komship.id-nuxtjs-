@@ -19,19 +19,49 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/swiper@8/swiper-bundle.min.css' }
+    ],
+    script: [
+      {
+        src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+        type: 'text/javascript'
+      },
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+        type: 'text/javascript'
+      },
+      {
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+        type: 'text/javascript'
+      }
     ]
   },
-
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '../komship.id-nuxtjs-/assets/css/app.css',
+    '../komship.id-nuxtjs-/assets/css/css/bootstrap.min.css'
+  ],
+  script: [
+    {
+      src: 'https://code.jquery.com/jquery-3.5.1.slim.min.js'
+    },
+    {
+      src: '../komship.id-nuxtjs-/assets/css/js/bootstrap.bundle.min.js',
+      type: 'text/javascript'
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js'
+    },
+    {
+      src: 'https://unpkg.com/swiper@8/swiper-bundle.min.js'
+    }
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~/plugin/aos.js', mode: 'client' },
-    { src: '~/plugin/vue-carousel.js', mode: 'client' },
-    { src: '~/plugin/vue-select.js', mode: 'client' }
+    { src: '../komship.id-nuxtjs-/plugin/aos.js', mode: 'client' },
+    { src: '../komship.id-nuxtjs-/plugin/vue-select.js', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -58,6 +88,5 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {}
 }

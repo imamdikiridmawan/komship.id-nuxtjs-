@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable new-cap */
+/* eslint-disable no-undef */
 <template>
   <div id="app" style="background-color: #f6f6f9; padding-bottom: 50px">
-    <section id="home" style="background-color: #ffffff">
+    <section id="home" style="background-color: #ffffff; padding-top: 100px">
       <div class="register-now container">
         <div class="row">
           <div
@@ -18,7 +21,8 @@
             </p>
             <div class="info">
               <span class="number">{{ totalPartners }}+</span>
-              <span class="label">Pebisnis online sudah bergabung dengan
+              <span class="label"
+                >Pebisnis online sudah bergabung dengan
                 <span style="color: #f95031">Komship</span>
               </span>
             </div>
@@ -34,7 +38,7 @@
             data-aos="fade-left"
             data-aos-duration="1500"
           >
-            <img :src="require('@/assets/img/hero/new_hero.png')">
+            <img :src="require('@/assets/img/hero/new_hero.png')" />
           </div>
         </div>
       </div>
@@ -43,9 +47,7 @@
       <div class="container">
         <div class="row mb-4" data-aos="fade-up" data-aos-duration="1500">
           <div class="col-md-5 align-self-center">
-            <h3 class="title">
-              Sering kirim barang?
-            </h3>
+            <h3 class="title">Sering kirim barang?</h3>
           </div>
           <div class="col-md-7 description">
             Sudah saatnya kamu beralih ke platform yang bisa memberikan berlipat
@@ -64,7 +66,7 @@
           >
             <div class="card content">
               <div class="card-body">
-                <img :src="item.image" class="icons"><br>
+                <img :src="item.image" class="icons" /><br />
                 <span class="title-content">{{ item.title }}</span>
                 <p class="description-content">
                   {{ item.description }}
@@ -81,7 +83,7 @@
             <slide v-for="item in service_items" :key="item.id">
               <div class="card">
                 <div class="card-body">
-                  <img :src="item.image" class="icons"><br>
+                  <img :src="item.image" class="icons" /><br />
                   <span class="title-content">{{ item.title }}</span>
                   <p class="description">
                     {{ item.description }}
@@ -112,62 +114,44 @@
               <img
                 class="logo"
                 :src="require('@/assets/img/logo/logo_jne.png')"
-              >
+              />
               <img
                 class="logo"
                 :src="require('@/assets/img/logo/logo_sicepat.png')"
-              >
+              />
               <img
                 class="logo"
                 :src="require('@/assets/img/logo/logo_idexpress.png')"
-              >
+              />
             </div>
           </div>
         </div>
       </div>
       <div class="benefit-table-desktop">
         <div class="row" data-aos="fade-right" data-aos-duration="1500">
-          <div class="col-md-3 p-4 head">
-            Benefit
-          </div>
-          <div class="col-md-3 p-4 subhead">
-            JNE
-          </div>
-          <div class="col-md-3 p-4 subhead">
-            SiCepat
-          </div>
-          <div class="col-md-3 p-4 subhead">
-            IDExpress
-          </div>
+          <div class="col-md-3 p-4 head">Benefit</div>
+          <div class="col-md-3 p-4 subhead">JNE</div>
+          <div class="col-md-3 p-4 subhead">SiCepat</div>
+          <div class="col-md-3 p-4 subhead">IDExpress</div>
         </div>
         <div class="row" data-aos="fade-right" data-aos-duration="1500">
-          <div class="col-md-3 p-4 head">
-            Diskon Ongkir
-          </div>
+          <div class="col-md-3 p-4 head">Diskon Ongkir</div>
+          <div class="col-md-3 p-4">Reg 25%</div>
           <div class="col-md-3 p-4">
-            Reg 25%
-          </div>
-          <div class="col-md-3 p-4">
-            <li class="list-benefit">
-              Reg 30%
-            </li>
+            <li class="list-benefit">Reg 30%</li>
             <li class="list-benefit">
               Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)
             </li>
           </div>
           <div class="col-md-3 p-4">
-            <li class="list-benefit">
-              Reg 25% (>1/2 kg)
-            </li>
+            <li class="list-benefit">Reg 25% (>1/2 kg)</li>
             <li class="list-benefit">
               &lt;1/2 Kg bayar 1/2-nya * + diskon 15%
             </li>
           </div>
         </div>
         <div class="row" data-aos="fade-right" data-aos-duration="1500">
-          <div class="col-md-3 p-4 head">
-            Biaya COD
-          </div>
+          <div class="col-md-3 p-4 head">Biaya COD</div>
           <div class="col-md-3 p-4">
             2.8%
             <div>(PPN ditanggung Komship)</div>
@@ -182,18 +166,10 @@
           </div>
         </div>
         <div class="row" data-aos="fade-right" data-aos-duration="1500">
-          <div class="col-md-3 p-4 head">
-            Biaya Retur
-          </div>
-          <div class="col-md-3 p-4">
-            Gratis se-lndonesia*
-          </div>
-          <div class="col-md-3 p-4">
-            Gratis se-lndonesia*
-          </div>
-          <div class="col-md-3 p-4">
-            Gratis se-lndonesia*
-          </div>
+          <div class="col-md-3 p-4 head">Biaya Retur</div>
+          <div class="col-md-3 p-4">Gratis se-lndonesia*</div>
+          <div class="col-md-3 p-4">Gratis se-lndonesia*</div>
+          <div class="col-md-3 p-4">Gratis se-lndonesia*</div>
         </div>
       </div>
       <div class="benefit-table-mobile">
@@ -226,9 +202,7 @@
           </button>
         </div>
         <div class="row" data-aos="zoom-in" data-aos-duration="1500">
-          <div class="col-6 p-3 head">
-            Benefit
-          </div>
+          <div class="col-6 p-3 head">Benefit</div>
           <div v-if="benefitContent === 'JNE'" class="col-6 p-3 subhead">
             JNE
           </div>
@@ -240,33 +214,23 @@
           </div>
         </div>
         <div class="row" data-aos="zoom-in" data-aos-duration="1500">
-          <div class="col-6 p-3 head">
-            Diskon Ongkir
-          </div>
-          <div v-if="benefitContent === 'JNE'" class="col-6 p-3">
-            Reg 25%
-          </div>
+          <div class="col-6 p-3 head">Diskon Ongkir</div>
+          <div v-if="benefitContent === 'JNE'" class="col-6 p-3">Reg 25%</div>
           <div v-if="benefitContent === 'SICEPAT'" class="col-6 p-3">
-            <li class="list-benefit">
-              Reg 30%
-            </li>
+            <li class="list-benefit">Reg 30%</li>
             <li class="list-benefit">
               Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)
             </li>
           </div>
           <div v-if="benefitContent === 'IDEXPRESS'" class="col-6 p-3">
-            <li class="list-benefit">
-              Reg 25% (>1/2 kg)
-            </li>
+            <li class="list-benefit">Reg 25% (>1/2 kg)</li>
             <li class="list-benefit">
               &lt;1/2 Kg bayar 1/2-nya * + diskon 15%
             </li>
           </div>
         </div>
         <div class="row" data-aos="zoom-in" data-aos-duration="1500">
-          <div class="col-6 p-3 head">
-            Biaya COD
-          </div>
+          <div class="col-6 p-3 head">Biaya COD</div>
           <div v-if="benefitContent === 'JNE'" class="col-6 p-3">
             2.8%
             <div>(PPN ditanggung Komship)</div>
@@ -281,9 +245,7 @@
           </div>
         </div>
         <div class="row" data-aos="zoom-in" data-aos-duration="1500">
-          <div class="col-6 p-3 head">
-            Biaya Retur
-          </div>
+          <div class="col-6 p-3 head">Biaya Retur</div>
           <div v-if="benefitContent === 'JNE'" class="col-6 p-3">
             Gratis se-lndonesia*
           </div>
@@ -299,7 +261,8 @@
         style="font-weight: 500"
         data-aos="fade-right"
         data-aos-duration="1500"
-      >*S&K berlaku</span>
+        >*S&K berlaku</span
+      >
     </section>
     <section class="recommend mt-5">
       <div class="container">
@@ -318,7 +281,7 @@
           >
             <div class="card">
               <div class="image">
-                <img src="@/assets/img/partials/jne-counter.png">
+                <img src="@/assets/img/partials/jne-counter.png" />
               </div>
               <span class="content">
                 Makin tenang kirim orderan dengan
@@ -336,7 +299,7 @@
           >
             <div class="card">
               <div class="image">
-                <img src="@/assets/img/partials/sicepat-counter.png">
+                <img src="@/assets/img/partials/sicepat-counter.png" />
               </div>
               <span class="content">
                 Makin <span style="color: #f95031">untung</span> dan
@@ -354,10 +317,12 @@
           >
             <div class="card">
               <div class="image">
-                <img src="@/assets/img/partials/idexpress-counter.png">
+                <img src="@/assets/img/partials/idexpress-counter.png" />
               </div>
               <span class="content">
-                <span style="color: #f95031">Cocok bagi pebisnis dengan paket ringan.</span>
+                <span style="color: #f95031"
+                  >Cocok bagi pebisnis dengan paket ringan.</span
+                >
                 Kirim orderan makin hemat dan mantap
               </span>
             </div>
@@ -383,7 +348,7 @@
               <span>{{ item.id }}</span>
             </div>
             <div class="image">
-              <img :src="item.image">
+              <img :src="item.image" />
             </div>
             <div class="description">
               <span>{{ item.title }}</span>
@@ -402,7 +367,7 @@
                 <span>{{ item.id }}</span>
               </div>
               <div class="image-mobile">
-                <img :src="item.image">
+                <img :src="item.image" />
               </div>
               <div class="description-mobile">
                 <span>{{ item.title }}</span>
@@ -418,7 +383,7 @@
                 <span>{{ item.title }}</span>
               </div>
               <div class="image-mobile d-flex justify-content-end">
-                <img :src="item.image">
+                <img :src="item.image" />
               </div>
               <div class="number-mobile">
                 <span>{{ item.id }}</span>
@@ -463,9 +428,7 @@
             <div class="col-xl-5 col-lg-5 col-md-5">
               <div @click="replace2('dataoto', 'kendala', 'order')">
                 <button id="arrow-btn" class="acc-feature d-flex mb-3">
-                  <div class="subhead-feature">
-                    Input Order Masal
-                  </div>
+                  <div class="subhead-feature">Input Order Masal</div>
                   <div class="arrow-feature mx-4" />
                 </button>
                 <p>
@@ -488,9 +451,7 @@
               </div>
               <div @click="replace2('order', 'dataoto', 'kendala')">
                 <button id="arrow-btn" class="acc-feature d-flex mb-3">
-                  <div class="subhead-feature">
-                    Pantau Kendala Pengiriman
-                  </div>
+                  <div class="subhead-feature">Pantau Kendala Pengiriman</div>
                   <div class="arrow-feature mx-4" />
                 </button>
                 <p>
@@ -505,21 +466,21 @@
                 class="image-feature-unggulan"
                 style="display: block"
               >
-                <img src="@/assets/img/background/bg-ordermasal.png">
+                <img src="@/assets/img/background/bg-ordermasal.png" />
               </div>
               <div
                 id="dataoto"
                 class="image-feature-unggulan"
                 style="display: none"
               >
-                <img src="@/assets/img/background/bg-dataorder.png">
+                <img src="@/assets/img/background/bg-dataorder.png" />
               </div>
               <div
                 id="kendala"
                 class="image-feature-unggulan"
                 style="display: none"
               >
-                <img src="@/assets/img/background/bg-kendala.png">
+                <img src="@/assets/img/background/bg-kendala.png" />
               </div>
             </div>
           </div>
@@ -533,10 +494,10 @@
               data-aos="zoom-in-right"
               data-aos-duration="1500"
             >
-              <img :src="item.image" style="width: 30%">
+              <img :src="item.image" style="width: 30%" />
               <div class="content">
                 <span class="title">{{ item.title }}</span>
-                <br>
+                <br />
                 <span class="description">{{ item.description }}</span>
               </div>
             </div>
@@ -546,7 +507,7 @@
             data-aos="zoom-in"
             data-aos-duration="1500"
             :src="require('@/assets/img/background/bg-newfeature.png')"
-          >
+          />
         </div>
       </div>
     </section>
@@ -586,12 +547,10 @@
               <img
                 src="@/assets/img/background/mbl-order.svg"
                 alt="produk terlaris"
-              >
+              />
             </div>
             <div class="col-6 text-right subhead-feature-mobile">
-              <div class="subhead-feature">
-                Input Order Masal
-              </div>
+              <div class="subhead-feature">Input Order Masal</div>
             </div>
             <div class="row justify-content-center mt-4">
               <div class="col-11">
@@ -614,7 +573,7 @@
               <img
                 src="@/assets/img/background/mbl-dataoto.svg"
                 alt="customer loyal"
-              >
+              />
             </div>
             <div class="row justify-content-center mt-4">
               <div class="col-11">
@@ -631,12 +590,10 @@
               <img
                 src="@/assets/img/background/mbl-kendala.svg"
                 alt="top admin order"
-              >
+              />
             </div>
             <div class="col-6 text-right subhead-feature-mobile">
-              <div class="subhead-feature">
-                Pantau Kendala Pengiriman
-              </div>
+              <div class="subhead-feature">Pantau Kendala Pengiriman</div>
             </div>
             <div class="row justify-content-center mt-4">
               <div class="col-11">
@@ -654,12 +611,10 @@
               <img
                 src="@/assets/img/partials/produk-terlaris.svg"
                 alt="produk terlaris"
-              >
+              />
             </div>
             <div class="col-6 text-right subhead-feature-mobile">
-              <div class="subhead-feature">
-                Produk Terlaris
-              </div>
+              <div class="subhead-feature">Produk Terlaris</div>
             </div>
             <div class="row justify-content-center">
               <div class="col-11">
@@ -682,7 +637,7 @@
               <img
                 src="@/assets/img/partials/customer-loyal.svg"
                 alt="customer loyal"
-              >
+              />
             </div>
             <div class="row justify-content-center">
               <div class="col-11">
@@ -699,12 +654,10 @@
               <img
                 src="@/assets/img/partials/top-admin.svg"
                 alt="top admin order"
-              >
+              />
             </div>
             <div class="col-6 text-right subhead-feature-mobile">
-              <div class="subhead-feature">
-                Top Admin Order
-              </div>
+              <div class="subhead-feature">Top Admin Order</div>
             </div>
             <div class="row justify-content-center">
               <div class="col-11">
@@ -726,7 +679,7 @@
         <h3 data-aos="zoom-in-down" data-aos-duration="1500">
           Percayakan Pengiriman Orderanmu Pada Komship!
         </h3>
-        <br>
+        <br />
         <button
           class="btn btn-primary btn-register-now"
           data-aos="zoom-in-up"
@@ -747,7 +700,7 @@
           >
             Percayakan Pengiriman Orderanmu Pada Komship!
           </h3>
-          <br>
+          <br />
           <button
             class="btn btn-register-now"
             data-aos="zoom-in-up"
@@ -765,13 +718,13 @@
         <span style="color: #f95031">Komship</span> telah dipercaya oleh
         Pebisnis dan UMKM di Indonesia
       </h3>
-      <div class="content-desktop">
-        <carousel :items-to-show="2" :autoplay="3000" :wrap-around="true">
-          <slide v-for="item in testimoni_items" :key="item.id">
-            <div class="card carousel__item">
+      <div class="content-desktop swiper" id="swiper">
+        <div class="swiper-wrapper">
+          <div v-for="item in testimoni_items" :key="item.id">
+            <div class="card carousel__item swiper-slide">
               <div class="head">
                 <div class="profile">
-                  <img :src="item.image">
+                  <img :src="item.image" />
                 </div>
                 <span class="name">{{ item.name }}</span>
               </div>
@@ -779,16 +732,18 @@
                 {{ item.description }}
               </div>
             </div>
-          </slide>
-        </carousel>
+          </div>
+        </div>
+        <div class="swiper-button-next" />
+        <div class="swiper-button-prev" />
       </div>
-      <div class="content-mobile">
-        <carousel :autoplay="3000" :wrap-around="true">
-          <slide v-for="item in testimoni_items" :key="item.id">
-            <div class="card carousel__item">
+      <div class="content-mobile swiper" id="swiper">
+        <div class="swiper-wrapper">
+          <div v-for="item in testimoni_items" :key="item.id">
+            <div class="card carousel__item swiper-slide">
               <div class="head">
                 <div class="profile">
-                  <img :src="item.image">
+                  <img :src="item.image" />
                 </div>
                 <span class="name">{{ item.name }}</span>
               </div>
@@ -796,135 +751,12 @@
                 {{ item.description }}
               </div>
             </div>
-          </slide>
-          <template #addons>
-            <Navigation>
-              <template #next>
-                <img :src="require('@/assets/img/icons/arrow-right.svg')">
-              </template>
-              <template #prev>
-                <img :src="require('@/assets/img/icons/arrow-left.svg')">
-              </template>
-            </Navigation>
-          </template>
-        </carousel>
+          </div>
+        </div>
+        <div class="swiper-button-next" />
+        <div class="swiper-button-prev" />
       </div>
     </section>
-    <!-- <section class="faq">
-      <div class="container">
-        <div class="header">
-          <h2 class="header-title">
-            FAQ
-          </h2>
-        </div>
-        <div class="accordion">
-          <div v-for="item in items" :key="item?.id" class="accordion-item">
-            <h2 :id="'heading' + item?.id" class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                :data-bs-target="'#collapse' + item?.id"
-                aria-expanded="true"
-                :aria-controls="'collapse' + item?.id"
-              >
-                <div class="item-header">
-                  {{ item?.header }}
-                </div>
-              </button>
-            </h2>
-            <div
-              :id="'collapse' + item?.id"
-              class="accordion-collapse collapse"
-              :aria-labelledby="'heading' + item?.id"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <div v-for="items in item?.desc">
-                  <div v-if="items?.subdesc">
-                    <ul v-for="val in items?.data" style="margin-bottom: 1px">
-                      <li
-                        style="
-                          list-style-type: disc !important;
-                          margin-top: 1px !important;
-                        "
-                      >
-                        {{ val }}
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-else class="desc">
-                    <span>{{ items === "" ? "&nbsp;" : items }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion">
-          <div
-            v-for="item in items2"
-            id="collapseExample"
-            :key="item?.id"
-            class="accordion-item collapse"
-          >
-            <h2 :id="'heading' + item?.id" class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                :data-bs-target="'#collapse' + item?.id"
-                aria-expanded="true"
-                :aria-controls="'collapse' + item?.id"
-              >
-                <div class="item-header">
-                  {{ item?.header }}
-                </div>
-              </button>
-            </h2>
-            <div
-              :id="'collapse' + item?.id"
-              class="accordion-collapse collapse"
-              :aria-labelledby="'heading' + item?.id"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <div v-for="items2 in item?.desc">
-                  <div v-if="items2?.subdesc">
-                    <ul v-for="val in items2?.data" style="margin-bottom: 1px">
-                      <li
-                        style="
-                          list-style-type: disc !important;
-                          margin-top: 1px !important;
-                        "
-                      >
-                        {{ val }}
-                      </li>
-                    </ul>
-                  </div>
-                  <div v-else class="desc">
-                    <span>{{ items2 === "" ? "&nbsp;" : items2 }}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="FAQ-button">
-            <button
-              class="accordion-button"
-              style="width: 190px; background-color: #f9f9f9"
-              data-bs-toggle="collapse"
-              href="#collapseExample"
-              type="button"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              Lihat FAQ lainnya
-            </button>
-          </div>
-        </div>
-      </div>
-    </section> -->
   </div>
 </template>
 
@@ -1212,10 +1044,12 @@ export default {
       this.benefitContent = value
     },
     countPartners () {
-      fetch('https://app.komerce.id/api/homepage/komship/countPartners').then(async (res) => {
-        const { data } = await res.json()
-        this.totalPartners = data
-      })
+      fetch('https://app.komerce.id/api/homepage/komship/countPartners').then(
+        async (res) => {
+          const { data } = await res.json()
+          this.totalPartners = data
+        }
+      )
     },
     replace (hide, show) {
       document.getElementById(hide).style.display = 'none'
@@ -1225,6 +1059,22 @@ export default {
       document.getElementById(hide).style.display = 'none'
       document.getElementById(hide2).style.display = 'none'
       document.getElementById(show).style.display = 'block'
+    },
+
+    swipper() {
+      new Swiper("document.getElementByClassName"){
+        slidesPerView: 3,
+        // direction: getDirection(),
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          resize: function () {
+            swiper.changeDirection(getDirection());
+          }
+        }
+      }
     }
   }
 }
@@ -1232,1100 +1082,1127 @@ export default {
 
 <style scoped>
 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Poppins';
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Poppins";
 }
 
 h3 {
-    font-size: 32px;
-    font-weight: 700;
-    font-family: 'Poppins';
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Poppins";
 }
 
 .register-now {
-    display: flex;
-    width: 100%;
-    padding-bottom: 5vw;
-    scroll-margin-top: 70px;
-    font-family: 'Poppins';
+  display: flex;
+  width: 100%;
+  padding-bottom: 5vw;
+  scroll-margin-top: 70px;
+  font-family: "Poppins";
 }
 
 .register-now .image-desktop img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .register-now .content {
-    margin: auto 0;
+  margin: auto 0;
 }
 
 .register-now .description {
-    color: #828282;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    padding-top: 10px;
-    font-family: 'Poppins';
+  color: #828282;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-top: 10px;
+  font-family: "Poppins";
 }
 
 .register-now .info {
-    display: flex;
-    margin: 15px 0;
-    font-family: 'Poppins';
+  display: flex;
+  margin: 15px 0;
+  font-family: "Poppins";
 }
 
 .register-now .info .number {
-    font-size: 48px;
-    font-weight: 600;
-    color: #FE783A;
-    font-family: 'Poppins';
-    align-self: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fe783a;
+  font-family: "Poppins";
+  align-self: center;
 }
 
 .register-now .info .label {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 16px 0;
-    margin-left: 20px;
-    font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 500;
+  margin: 16px 0;
+  margin-left: 20px;
+  font-family: "Poppins";
 }
 
 .register-now .btn-register-now {
-    font-weight: 800;
-    font-size: 16px;
-    min-width: 231px;
-    height: 60px;
-    font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 16px;
+  min-width: 231px;
+  height: 60px;
+  font-family: "Poppins";
 }
 
 /* serviceYYY */
 
 .service {
-    padding-top: 5vw;
-    background-color: #f8f9fa;
-    scroll-margin-top: 70px;
+  padding-top: 5vw;
+  background-color: #f8f9fa;
+  scroll-margin-top: 70px;
 }
 
 .service-desktop {
-    background: linear-gradient(90deg, #FF6A3A -20.91%, #FBA63C 85.49%);
-    border-radius: 20px;
-    padding: 80px 20px;
+  background: linear-gradient(90deg, #ff6a3a -20.91%, #fba63c 85.49%);
+  border-radius: 20px;
+  padding: 80px 20px;
 }
 
 .service-mobile {
-    display: none;
+  display: none;
 }
 
 .service .title {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    font-family: 'Poppins';
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: "Poppins";
 }
 
 .service .description {
-    color: #828282;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: 'Poppins';
+  color: #828282;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins";
 }
 
 .service .content {
-    border: none;
-    border-radius: 10px;
-    padding: 0 10px;
-    min-height: 230px;
-    margin-bottom: 50px;
-    font-family: 'Poppins';
+  border: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  min-height: 230px;
+  margin-bottom: 50px;
+  font-family: "Poppins";
 }
 
 .service .title-content {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins";
 }
 
 .service .description-content {
-    color: #828282;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-top: 10px;
-    font-family: 'Poppins';
+  color: #828282;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 10px;
+  font-family: "Poppins";
 }
 
 .service .icons {
-    width: 60px;
-    height: 60px;
-    position: relative;
-    margin-top: -50px;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    background-color: transparent;
-    -webkit-box-shadow: 2px 4px 5px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 2px 4px 5px -1px rgba(0, 0, 0, 0.75);
-    box-shadow: 2px 4px 5px -1px rgba(0, 0, 0, 0.75);
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  background-color: transparent;
+  -webkit-box-shadow: 2px 4px 5px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 4px 5px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 4px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
 .benefit-head {
-    position: relative;
-    margin: 0 50px;
-    margin-top: -50px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    font-family: 'Poppins';
+  position: relative;
+  margin: 0 50px;
+  margin-top: -50px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-family: "Poppins";
 }
 
 .benefit .list-benefit::marker {
-    color: #F95031;
-    font-family: 'Poppins';
+  color: #f95031;
+  font-family: "Poppins";
 }
 
 .benefit .logo {
-    width: 120px;
-    margin: auto;
+  width: 120px;
+  margin: auto;
 }
 
 .benefit .content {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins";
 }
 
 .benefit-table-desktop {
-    margin-top: 50px;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
 }
 
 .benefit-table-desktop .row {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 0;
+  margin-bottom: 10px;
+  overflow-x: hidden;
+  font-family: "Poppins";
+}
+
+.benefit-table-desktop .head {
+  background-color: #fba63c;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.benefit-table-desktop .subhead {
+  background-color: #ff6a3a;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.benefit-table-mobile {
+  display: none;
+}
+
+.benefit-table-mobile .btn-menu {
+  width: auto;
+  margin-right: 6px;
+  color: #c2c2c2;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+.benefit-table-mobile .btn-menu:hover {
+  opacity: 0.7;
+}
+
+.benefit-table-mobile .btn-menu:focus {
+  box-shadow: unset;
+}
+
+.benefit-table-mobile .active {
+  color: #ff6a3a;
+  border: 1px solid #ff6a3a;
+}
+
+.recommend .card {
+  border: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.recommend .card .image {
+  height: 180px;
+  display: flex;
+}
+
+.recommend .card img {
+  margin-top: auto;
+}
+
+.recommend .card .content {
+  background-color: #ffffff;
+  padding: 20px;
+  min-height: 100px;
+  border-radius: 0px 0px 20px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.flow {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.flow .content-mobile {
+  display: none;
+}
+
+.flow h3 {
+  max-width: 450px;
+  padding: 30px 0;
+  font-family: "Poppins";
+  letter-spacing: 0.7px;
+}
+
+.flow .number {
+  width: 54px;
+  height: 54px;
+  background-color: #ffece9;
+  border: 1px solid #ff6a3a;
+  border-radius: 50%;
+  font-family: "Poppins";
+  padding-top: 1.5vh;
+}
+
+.flow .number span {
+  font-size: 24px;
+  color: #ff6a3a;
+  display: block;
+  text-align: center;
+  margin-top: 6px;
+  font-family: "Poppins";
+}
+
+.flow .image {
+  position: relative;
+  margin-top: -54px;
+  display: flex;
+  justify-content: center;
+}
+
+.flow .image img {
+  height: 200px;
+  width: 200px;
+}
+
+.flow .description {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+}
+
+.flow .description span {
+  width: 200px;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ff6a3a;
+  font-family: "Poppins";
+}
+
+.feature {
+  padding: 20px 0;
+}
+
+.feature h3 {
+  padding: 15px 0;
+}
+
+.feature .fitur {
+  text-align: center;
+}
+
+.feature .content {
+  width: 70%;
+  margin: auto 0;
+  z-index: 1;
+  font-family: "Poppins";
+}
+
+.feature .title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f95031;
+  font-family: "Poppins";
+}
+
+.feature .description {
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+.image-feature {
+  position: absolute;
+  top: 40px;
+  width: 480px;
+  margin-top: -5rem;
+  height: auto;
+  right: 0;
+}
+
+.btn-feature {
+  padding: 8px;
+  border: solid 1px #c2c2c2;
+  color: #c2c2c2;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.btn-feature:focus {
+  border: solid 1px #f95031;
+  color: #f95031;
+}
+
+.subhead-feature {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#arrow-btn:hover .arrow-feature {
+  display: block;
+  background-image: url("@/assets/img/icons/arrow-right-orange.svg");
+}
+
+.acc-feature:hover {
+  color: #f95031;
+}
+
+#arrow-btn:focus .arrow-feature {
+  display: block;
+  background-image: url("@/assets/img/icons/arrow-right-orange.svg");
+}
+
+.acc-feature {
+  border: none;
+  background-color: #f6f6f9;
+}
+
+.acc-feature:focus {
+  color: #f95031;
+}
+
+.arrow-feature {
+  width: 3rem;
+  height: 2rem;
+  background-image: url("@/assets/img/icons/arrow-right-black.svg");
+  background-repeat: no-repeat;
+}
+
+.image-feature-unggulan {
+  text-align: -webkit-right;
+}
+
+.image-feature-unggulan img {
+  max-width: 100%;
+}
+
+.conclusion {
+  max-height: 275px;
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fcebbe;
+}
+
+.conclusion .content {
+  max-width: 630px;
+  text-align: center;
+  margin: auto 0;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+.conclusion .content .title {
+  font-size: 32px;
+  font-family: "Poppins";
+}
+
+.conclusion .content .btn {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 24px;
+  font-family: "Poppins";
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  box-shadow: unset;
+}
+
+.conclusion .bg-model-left {
+  position: relative;
+  margin-top: -50px;
+}
+
+.conclusion .bg-model-right {
+  position: relative;
+  margin-top: -63px;
+}
+
+.testimoni .title {
+  max-width: 624px;
+  margin: 20px auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Poppins";
+}
+
+.testimoni .card {
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  min-height: 230px;
+  margin: 10px 0;
+  font-family: "Poppins";
+}
+
+.testimoni .card .head {
+  background-color: #ff6a3a;
+  border-radius: 20px 20px 0px 0px;
+  height: 80px;
+  display: flex;
+}
+
+.testimoni .card .head .profile {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.testimoni .card .head .profile img {
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+}
+
+.testimoni .card .content {
+  padding: 30px 40px;
+  margin-top: 15px;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+.testimoni .card .name {
+  font-size: 20px;
+  color: #ffffff;
+  margin: auto 30px;
+  padding-top: 10px;
+  text-align: left;
+  font-family: "Poppins";
+}
+
+.testimoni .carousel__prev,
+.testimoni .carousel__next {
+  background-color: transparent;
+}
+
+.testimoni .carousel__prev {
+  left: 23%;
+}
+
+.testimoni .carousel__next {
+  right: 23%;
+}
+
+.testimoni .carousel__slide > .carousel__item {
+  transform: scale(1);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.testimoni .carousel__slide--visible > .carousel__item {
+  opacity: 1;
+  transform: rotateY(0);
+}
+
+.testimoni .carousel__slide--next > .carousel__item {
+  transform: scale(0.9) translate(-10px);
+}
+
+.testimoni .carousel__slide--prev > .carousel__item {
+  transform: scale(0.9) translate(10px);
+}
+
+.testimoni .carousel__slide--active > .carousel__item {
+  transform: scale(1.1);
+}
+
+.testimoni .content-mobile {
+  display: none;
+}
+
+#feature-mobile {
+  display: none;
+}
+
+#conclusion-mobile {
+  display: none;
+}
+
+@media (max-width: 1199.98px) {
+  .register-now .description {
+    font-size: 16px;
+  }
+
+  .register-now .image-desktop {
+    margin: auto 0;
+  }
+
+  .register-now .btn-register-now {
+    font-weight: 700;
+    font-size: 14px;
+    min-width: 160px;
+    height: 50px;
+  }
+
+  /* .service .description {
+    font-size: 14px;
+  } */
+  .service .content {
+    min-height: 255px;
+  }
+
+  .recommend .card .content {
+    min-height: 140px;
+  }
+
+  .image-feature {
+    width: 420px;
+  }
+
+  .benefit .content {
+    margin-bottom: 20px;
+  }
+
+  .flow .description span {
+    margin-left: 15%;
+  }
+
+  .flow .image {
+    justify-content: end;
+  }
+
+  #feature-mobile {
+    display: none;
+  }
+
+  #conclusion-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .register-now .title {
+    margin-top: 15px;
+  }
+
+  .register-now .info .number {
+    font-size: 34px;
+    /* font-weight: 600;
+    color: #FE783A; */
+  }
+
+  .register-now .info .label {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .register-now .description {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .service .content {
+    min-height: 230px;
+  }
+
+  .image-feature {
+    display: none;
+  }
+
+  .service .title {
+    margin-top: 4vh;
+  }
+
+  .benefit-head {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .testimoni .card .content {
+    padding: 30px;
+    font-size: 14px;
+  }
+
+  .testimoni .card {
+    min-height: 250px;
+    margin: 20px 0;
+  }
+
+  .conclusion .bg-model-left {
+    margin-top: 0;
+    width: 150px;
+  }
+
+  .conclusion .bg-model-right {
+    margin-top: 0;
+    width: 200px;
+  }
+
+  #feature-mobile {
+    display: none;
+  }
+
+  #conclusion-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #feature-mobile {
+    display: none;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .register-now .title {
+    text-align: center;
+  }
+
+  .register-now .description {
+    text-align: center;
+  }
+
+  .register-now .info {
+    justify-content: center;
+  }
+
+  .register-now .btn-register-now {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .register-now .image-desktop {
+    margin-top: 20px;
+  }
+
+  .service-desktop {
+    display: none;
+  }
+
+  .service-mobile {
+    display: unset;
+  }
+
+  .service-mobile .carousel {
+    background: linear-gradient(90deg, #ff6a3a -20.91%, #fba63c 85.49%);
+    border-radius: 10px;
+  }
+
+  .service-mobile .carousel .card {
+    margin: 50px 20px;
+    width: 100%;
+    text-align: left;
+    min-height: 180px;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+
+  .service-mobile .carousel .card .description {
+    margin-top: 10px;
+  }
+  .service-mobile .carousel__prev,
+  .service-mobile .carousel__next {
+    background-color: transparent;
+  }
+
+  .service-mobile .carousel__prev {
+    position: absolute;
+    left: 45%;
+    top: 92%;
+  }
+
+  .service-mobile .carousel__next {
+    position: absolute;
+    right: 45%;
+    top: 92%;
+  }
+
+  .service .title {
+    justify-content: start;
+    margin: 10px 0;
+  }
+
+  .recommend .card .image {
+    margin: 0 auto;
+  }
+
+  .recommend .card .content {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .benefit-head {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .benefit-table-desktop {
+    display: none;
+  }
+
+  .benefit-table-mobile {
+    display: unset;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+  }
+
+  .benefit-table-mobile .row {
     border-radius: 12px;
     background-color: #ffffff;
     padding: 0;
     margin-bottom: 10px;
     overflow-x: hidden;
-    font-family: 'Poppins';
-}
+  }
 
-.benefit-table-desktop .head {
-    background-color: #FBA63C;
-    font-family: 'Poppins';
-    font-size: 20px;
-}
+  .benefit-table-mobile .head {
+    background-color: #fba63c;
+  }
 
-.benefit-table-desktop .subhead {
-    background-color: #FF6A3A;
-    font-family: 'Poppins';
-    font-size: 20px;
-}
+  .benefit-table-mobile .subhead {
+    background-color: #ff6a3a;
+  }
 
-.benefit-table-mobile {
+  .testimoni .content-desktop {
     display: none;
-}
+  }
 
-.benefit-table-mobile .btn-menu {
-    width: auto;
-    margin-right: 6px;
-    color: #C2C2C2;
-    background-color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 4px 12px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Poppins';
-}
+  .testimoni .content-mobile {
+    display: unset;
+  }
 
-.benefit-table-mobile .btn-menu:hover {
-    opacity: 0.7;
-}
+  .testimoni .content-mobile .carousel__prev,
+  .testimoni .content-mobile .carousel__next {
+    border-radius: 15px;
+  }
 
-.benefit-table-mobile .btn-menu:focus {
-    box-shadow: unset;
-}
-
-.benefit-table-mobile .active {
-    color: #FF6A3A;
-    border: 1px solid #FF6A3A;
-}
-
-.recommend .card {
-    border: none;
-    background-color: transparent;
-    overflow: hidden;
-}
-
-.recommend .card .image {
-    height: 180px;
-    display: flex;
-}
-
-.recommend .card img {
-    margin-top: auto;
-}
-
-.recommend .card .content {
-    background-color: #ffffff;
-    padding: 20px;
-    min-height: 100px;
-    border-radius: 0px 0px 20px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Poppins';
-}
-
-.flow {
-    background-color: #ffffff;
-    margin-top: 20px;
-}
-
-.flow .content-mobile {
-    display: none;
-}
-
-.flow h3 {
-    max-width: 450px;
-    padding: 30px 0;
-    font-family: 'Poppins';
-    letter-spacing: 0.7px;
-}
-
-.flow .number {
-    width: 54px;
-    height: 54px;
-    background-color: #FFECE9;
-    border: 1px solid #FF6A3A;
-    border-radius: 50%;
-    font-family: 'Poppins';
-    padding-top: 1.5vh;
-}
-
-.flow .number span {
-    font-size: 24px;
-    color: #FF6A3A;
-    display: block;
-    text-align: center;
-    margin-top: 6px;
-    font-family: 'Poppins';
-}
-
-.flow .image {
-    position: relative;
-    margin-top: -54px;
-    display: flex;
-    justify-content: center;
-}
-
-.flow .image img {
-    height: 200px;
-    width: 200px;
-}
-
-.flow .description {
-    display: flex;
-    justify-content: center;
-    font-family: 'Poppins';
-}
-
-.flow .description span {
-    width: 200px;
-    text-align: center;
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    color: #FF6A3A;
-    font-family: 'Poppins';
-}
-
-.feature {
-    padding: 20px 0;
-}
-
-.feature h3 {
-    padding: 15px 0;
-}
-
-.feature .fitur {
-    text-align: center;
-}
-
-.feature .content {
-    width: 70%;
-    margin: auto 0;
-    z-index: 1;
-    font-family: 'Poppins';
-}
-
-.feature .title {
-    font-size: 18px;
-    font-weight: 600;
-    color: #F95031;
-    font-family: 'Poppins';
-}
-
-.feature .description {
-    font-size: 14px;
-    font-family: 'Poppins';
-}
-
-.image-feature {
+  .testimoni .content-mobile .carousel__prev {
     position: absolute;
-    top: 40px;
-    width: 480px;
-    margin-top: -5rem;
-    height: auto;
-    right: 0;
-}
+    left: 40%;
+    top: 110%;
+  }
 
-.btn-feature {
-    padding: 8px;
-    border: solid 1px #C2C2C2;
-    color: #C2C2C2;
-    font-weight: 500;
-    border-radius: 8px;
-}
+  .testimoni .content-mobile .carousel__next {
+    position: absolute;
+    right: 40%;
+    top: 110%;
+  }
 
-.btn-feature:focus {
-    border: solid 1px #F95031;
-    color: #F95031;
-}
+  .testimoni .card .content {
+    font-size: 12px;
+  }
 
-.subhead-feature {
-    font-weight: 600;
-    font-size: 18px;
-}
-
-#arrow-btn:hover .arrow-feature {
-    display: block;
-    background-image: url("@/assets/img/icons/arrow-right-orange.svg");
-}
-
-.acc-feature:hover {
-    color: #F95031;
-}
-
-#arrow-btn:focus .arrow-feature {
-    display: block;
-    background-image: url("@/assets/img/icons/arrow-right-orange.svg");
-}
-
-.acc-feature {
-    border: none;
-    background-color: #F6F6F9;
-}
-
-.acc-feature:focus {
-    color: #F95031;
-}
-
-.arrow-feature {
-    width: 3rem;
-    height: 2rem;
-    background-image: url("@/assets/img/icons/arrow-right-black.svg");
-    background-repeat: no-repeat;
-}
-
-.image-feature-unggulan {
-    text-align: -webkit-right;
-}
-
-.image-feature-unggulan img {
-    max-width: 100%;
-}
-
-.conclusion {
-    max-height: 275px;
-    margin-top: 63px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #FCEBBE;
-}
-
-.conclusion .content {
-    max-width: 630px;
-    text-align: center;
-    margin: auto 0;
-    font-weight: 600;
-    font-family: 'Poppins';
-}
-
-.conclusion .content .title {
-    font-size: 32px;
-    font-family: 'Poppins';
-}
-
-.conclusion .content .btn {
-    font-weight: 600;
+  .testimoni .card .name {
     font-size: 16px;
-    padding: 16px 24px;
-    font-family: 'Poppins';
-}
+    margin-right: 0;
+    margin-left: 20px;
+  }
 
-.btn-check:focus+.btn-primary,
-.btn-primary:focus {
-    box-shadow: unset;
-}
-
-.conclusion .bg-model-left {
-    position: relative;
-    margin-top: -50px;
-}
-
-.conclusion .bg-model-right {
-    position: relative;
-    margin-top: -63px;
-}
-
-.testimoni .title {
-    max-width: 624px;
-    margin: 20px auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-family: 'Poppins';
-}
-
-.testimoni .card {
-    width: 90%;
-    border: none;
-    border-radius: 20px;
-    min-height: 230px;
-    margin: 10px 0;
-    font-family: 'Poppins';
-}
-
-.testimoni .card .head {
-    background-color: #FF6A3A;
-    border-radius: 20px 20px 0px 0px;
-    height: 80px;
-    display: flex;
-}
-
-.testimoni .card .head .profile {
-    position: relative;
+  .conclusion .bg-model-left {
     width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    margin-left: 5%;
-    margin-top: 20px;
-}
+  }
 
-.testimoni .card .head .profile img {
-    width: 90px;
-    height: 90px;
-    margin-top: 5px;
-}
+  .conclusion .bg-model-right {
+    width: 150px;
+  }
 
-.testimoni .card .content {
-    padding: 30px 40px;
-    margin-top: 15px;
-    font-size: 16px;
-    font-family: 'Poppins';
-}
-
-.testimoni .card .name {
-    font-size: 20px;
-    color: #ffffff;
-    margin: auto 30px;
-    padding-top: 10px;
-    text-align: left;
-    font-family: 'Poppins';
-}
-
-.testimoni .carousel__prev,
-.testimoni .carousel__next {
-    background-color: transparent;
-}
-
-.testimoni .carousel__prev {
-    left: 23%;
-}
-
-.testimoni .carousel__next {
-    right: 23%;
-}
-
-.testimoni .carousel__slide>.carousel__item {
-    transform: scale(1);
-    opacity: 0.5;
-    transition: 0.5s;
-}
-
-.testimoni .carousel__slide--visible>.carousel__item {
-    opacity: 1;
-    transform: rotateY(0);
-}
-
-.testimoni .carousel__slide--next>.carousel__item {
-    transform: scale(0.9) translate(-10px);
-}
-
-.testimoni .carousel__slide--prev>.carousel__item {
-    transform: scale(0.9) translate(10px);
-}
-
-.testimoni .carousel__slide--active>.carousel__item {
-    transform: scale(1.1);
-}
-
-.testimoni .content-mobile {
-    display: none;
-}
-
-#feature-mobile {
-    display: none;
-}
-
-#conclusion-mobile {
-    display: none;
-}
-
-@media (max-width: 1199.98px) {
-    .register-now .description {
-        font-size: 16px;
-    }
-
-    .register-now .image-desktop {
-        margin: auto 0;
-    }
-
-    .register-now .btn-register-now {
-        font-weight: 700;
-        font-size: 14px;
-        min-width: 160px;
-        height: 50px;
-    }
-
-    /* .service .description {
+  .conclusion .content .btn {
     font-size: 14px;
-  } */
-    .service .content {
-        min-height: 255px;
-    }
+    padding: 12px 18px;
+  }
 
-    .recommend .card .content {
-        min-height: 140px;
-    }
+  #conclusion-mobile {
+    display: none;
+  }
 
-    .image-feature {
-        width: 420px;
-    }
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
 
-    .benefit .content {
-        margin-bottom: 20px;
-    }
-
-    .flow .description span {
-        margin-left: 15%;
-    }
-
-    .flow .image {
-        justify-content: end;
-    }
-
-    #feature-mobile {
-        display: none;
-    }
-
-    #conclusion-mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 991.98px) {
-    h2 {
-        font-size: 32px;
-        font-weight: 600;
-    }
-
-    h3 {
-        font-size: 28px;
-        font-weight: 600;
-    }
-
-    .register-now .title {
-        margin-top: 15px;
-    }
-
-    .register-now .info .number {
-        font-size: 34px;
-        /* font-weight: 600;
-    color: #FE783A; */
-    }
-
-    .register-now .info .label {
-        font-size: 14px;
-        margin-left: 10px;
-    }
-
-    .register-now .description {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .service .content {
-        min-height: 230px;
-    }
-
-    .image-feature {
-        display: none;
-    }
-
-    .service .title {
-        margin-top: 4vh;
-    }
-
-    .benefit-head {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-    .testimoni .card .content {
-        padding: 30px;
-        font-size: 14px;
-    }
-
-    .testimoni .card {
-        min-height: 250px;
-        margin: 20px 0;
-    }
-
-    .conclusion .bg-model-left {
-        margin-top: 0;
-        width: 150px;
-    }
-
-    .conclusion .bg-model-right {
-        margin-top: 0;
-        width: 200px;
-    }
-
-    #feature-mobile {
-        display: none;
-    }
-
-    #conclusion-mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 767.98px) {
-    #feature-mobile {
-        display: none;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 26px;
-    }
-
-    .register-now .title {
-        text-align: center;
-    }
-
-    .register-now .description {
-        text-align: center;
-    }
-
-    .register-now .info {
-        justify-content: center;
-    }
-
-    .register-now .btn-register-now {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .register-now .image-desktop {
-        margin-top: 20px;
-    }
-
-    .service-desktop {
-        display: none;
-    }
-
-    .service-mobile {
-        display: unset;
-    }
-
-    .service-mobile .carousel {
-        background: linear-gradient(90deg, #FF6A3A -20.91%, #FBA63C 85.49%);
-        border-radius: 10px;
-    }
-
-    .service-mobile .carousel .card {
-        margin: 50px 20px;
-        width: 100%;
-        text-align: left;
-        min-height: 180px;
-        border-radius: 10px;
-        padding: 0 10px;
-    }
-
-    .service-mobile .carousel .card .description {
-        margin-top: 10px;
-    }
-
-    .service-mobile .carousel__prev,
-    .service-mobile .carousel__next {
-        background-color: transparent;
-    }
-
-    .service-mobile .carousel__prev {
-        position: absolute;
-        left: 45%;
-        top: 92%;
-    }
-
-    .service-mobile .carousel__next {
-        position: absolute;
-        right: 45%;
-        top: 92%;
-    }
-
-    .service .title {
-        justify-content: start;
-        margin: 10px 0;
-    }
-
-    .recommend .card .image {
-        margin: 0 auto;
-    }
-
-    .recommend .card .content {
-        max-width: 350px;
-        margin: 0 auto;
-    }
-
-    .benefit-head {
-        margin: 0;
-        margin-top: 10px;
-    }
-
-    .benefit-table-desktop {
-        display: none;
-    }
-
-    .benefit-table-mobile {
-        display: unset;
-        text-align: center;
-        vertical-align: middle;
-        font-weight: 500;
-    }
-
-    .benefit-table-mobile .row {
-        border-radius: 12px;
-        background-color: #ffffff;
-        padding: 0;
-        margin-bottom: 10px;
-        overflow-x: hidden;
-    }
-
-    .benefit-table-mobile .head {
-        background-color: #FBA63C;
-    }
-
-    .benefit-table-mobile .subhead {
-        background-color: #FF6A3A;
-    }
-
-    .testimoni .content-desktop {
-        display: none;
-    }
-
-    .testimoni .content-mobile {
-        display: unset;
-    }
-
-    .testimoni .content-mobile .carousel__prev,
-    .testimoni .content-mobile .carousel__next {
-        border-radius: 15px;
-    }
-
-    .testimoni .content-mobile .carousel__prev {
-        position: absolute;
-        left: 40%;
-        top: 110%;
-    }
-
-    .testimoni .content-mobile .carousel__next {
-        position: absolute;
-        right: 40%;
-        top: 110%;
-    }
-
-    .testimoni .card .content {
-        font-size: 12px;
-    }
-
-    .testimoni .card .name {
-        font-size: 16px;
-        margin-right: 0;
-        margin-left: 20px;
-    }
-
-    .conclusion .bg-model-left {
-        width: 100px;
-    }
-
-    .conclusion .bg-model-right {
-        width: 150px;
-    }
-
-    .conclusion .content .btn {
-        font-size: 14px;
-        padding: 12px 18px;
-    }
-
-    #conclusion-mobile {
-        display: none;
-    }
-
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 575.98px) {
-    .feature {
-        display: none;
-    }
+  .feature {
+    display: none;
+  }
 
-    #feature-mobile {
-        display: block;
-    }
+  #feature-mobile {
+    display: block;
+  }
 
-    .head-feature {
-        padding-top: 40px;
-    }
+  .head-feature {
+    padding-top: 40px;
+  }
 
-    .subhead-feature {
-        font-family: 'Poppins';
-        font-weight: 600;
-        font-size: 18px;
-        color: #F95031;
-    }
+  .subhead-feature {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 18px;
+    color: #f95031;
+  }
 
-    .subhead-feature-mobile {
-        align-self: center;
-    }
+  .subhead-feature-mobile {
+    align-self: center;
+  }
 
-    .content-feature {
-        font-family: 'Poppins';
-        font-weight: 400;
-        font-size: 14px;
-    }
+  .content-feature {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+  }
 
-    h2 {
-        font-size: 26px;
-    }
+  h2 {
+    font-size: 26px;
+  }
 
-    h3 {
-        font-size: 24px;
-    }
+  h3 {
+    font-size: 24px;
+  }
 
-    .flow .content-desktop {
-        display: none;
-    }
+  .flow .content-desktop {
+    display: none;
+  }
 
-    .flow .content-mobile {
-        display: unset;
-    }
+  .flow .content-mobile {
+    display: unset;
+  }
 
-    .flow .content-mobile .number-mobile {
-        width: 34px;
-        height: 34px;
-        background-color: #FFECE9;
-        border: 1px solid #FF6A3A;
-        border-radius: 50%;
-        padding-top: 1%;
-    }
+  .flow .content-mobile .number-mobile {
+    width: 34px;
+    height: 34px;
+    background-color: #ffece9;
+    border: 1px solid #ff6a3a;
+    border-radius: 50%;
+    padding-top: 1%;
+  }
 
-    .flow .content-mobile .number-mobile span {
-        font-size: 18px;
-        color: #FF6A3A;
-        margin: 10px;
-    }
+  .flow .content-mobile .number-mobile span {
+    font-size: 18px;
+    color: #ff6a3a;
+    margin: 10px;
+  }
 
-    .flow .content-mobile .image-mobile {
-        width: 50%;
-    }
+  .flow .content-mobile .image-mobile {
+    width: 50%;
+  }
 
-    .flow .content-mobile .image-mobile img {
-        width: 90%;
-    }
+  .flow .content-mobile .image-mobile img {
+    width: 90%;
+  }
 
-    .flow .content-mobile .description-mobile {
-        font-size: 16px;
-        font-weight: 600;
-        padding: 10px;
-        color: #FF6A3A;
-        width: 50%;
-        display: flex;
-        align-items: center !important;
-    }
+  .flow .content-mobile .description-mobile {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    color: #ff6a3a;
+    width: 50%;
+    display: flex;
+    align-items: center !important;
+  }
 
-    .conclusion h3 {
-        font-weight: 500;
-        font-size: 20px;
-        margin-bottom: 0;
-    }
+  .conclusion h3 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
 
-    .conclusion .content {
-        padding: 15px;
-    }
+  .conclusion .content {
+    padding: 15px;
+  }
 
-    .conclusion .bg-model-left {
-        width: 80px;
-    }
+  .conclusion .bg-model-left {
+    width: 80px;
+  }
 
-    .conclusion .bg-model-right {
-        width: 110px;
-    }
+  .conclusion .bg-model-right {
+    width: 110px;
+  }
 
-    .conclusion .content .btn {
-        font-size: 14px;
-        padding: 8px 14px;
-    }
+  .conclusion .content .btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
 
-    .register-now .info {
-        border-top: solid 2px #E2E2E2;
-    }
+  .register-now .info {
+    border-top: solid 2px #e2e2e2;
+  }
 
-    #conclusion-mobile {
-        background-color: #FCEBBE;
-        display: block;
-        height: 180px;
-        text-align: -webkit-center;
-    }
+  #conclusion-mobile {
+    background-color: #fcebbe;
+    display: block;
+    height: 180px;
+    text-align: -webkit-center;
+  }
 
-    .conclusion-mobile-left {
-        background-image: url("@/assets/img/hero/model-conclusion-mobile-left.png");
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        height: 180px;
-    }
+  .conclusion-mobile-left {
+    background-image: url("@/assets/img/hero/model-conclusion-mobile-left.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 180px;
+  }
 
-    .conclusion-mobile-right {
-        background-image: url("@/assets/img/hero/model-conclusion-mobile-right.png");
-        background-repeat: no-repeat;
-        background-position: bottom right;
-    }
+  .conclusion-mobile-right {
+    background-image: url("@/assets/img/hero/model-conclusion-mobile-right.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
 
-    #conclusion-mobile .content-mobile {
-        padding-top: 40px;
-        width: 60%;
-        text-align: -webkit-center;
-        font-size: 16px;
-    }
+  #conclusion-mobile .content-mobile {
+    padding-top: 40px;
+    width: 60%;
+    text-align: -webkit-center;
+    font-size: 16px;
+  }
 
-    .conclusion {
-        display: none;
-    }
+  .conclusion {
+    display: none;
+  }
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
 }
 
 @media (max-width: 480px) {
-    h2 {
-        font-size: 22px;
-    }
+  h2 {
+    font-size: 22px;
+  }
 
-    h3 {
-        font-size: 20px;
-    }
+  h3 {
+    font-size: 20px;
+  }
 
-    .feature .title-content {
-        font-size: 26px;
-    }
+  .feature .title-content {
+    font-size: 26px;
+  }
 
-    .service-mobile .carousel .card {
-        min-height: 250px;
-    }
+  .service-mobile .carousel .card {
+    min-height: 250px;
+  }
 
-    .conclusion h3 {
-        font-size: 18px;
-    }
+  .conclusion h3 {
+    font-size: 18px;
+  }
 
-    .conclusion .content .btn {
-        font-size: 12px;
-        padding: 10px 16px;
-    }
+  .conclusion .content .btn {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
 
-    .benefit .logo {
-        width: 70px;
-    }
+  .benefit .logo {
+    width: 70px;
+  }
+
+  .swiper-button-next {
+    right: 20px;
+    transform: rotate(90deg);
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+    transform: rotate(90deg);
+  }
 }
 
 /* FAQ */
 
 .faq {
-    background-color: #f8f9fa;
-    padding: 10vw 0;
-    height: 100%;
-    margin-top: 50px;
+  background-color: #f8f9fa;
+  padding: 10vw 0;
+  height: 100%;
+  margin-top: 50px;
 }
 
 .faq .header {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 3vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3vw;
 }
 
 .faq .header-title {
-    font-size: 32px;
-    font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .faq .accordion-item {
-    border-radius: 8px !important;
-    border: 1px solid #e2e2e2 !important;
-    margin-bottom: 10px;
+  border-radius: 8px !important;
+  border: 1px solid #e2e2e2 !important;
+  margin-bottom: 10px;
 }
 
 .faq .accordion-button {
-    border-radius: 8px !important;
-    color: #f95031 !important;
+  border-radius: 8px !important;
+  color: #f95031 !important;
 }
 
 .faq .item-header {
-    width: 90%;
+  width: 90%;
 }
 
 .faq .accordion-button::after {
-    background-image: url("@/assets/img/icons/plus-icon.png");
+  background-image: url("@/assets/img/icons/plus-icon.png");
 }
 
 .faq .accordion-button:not(.collapsed)::after {
-    background-image: url("@/assets/img/icons/minus-icon.png");
-    background-color: unset !important;
-    border-color: unset !important;
-    color: #f95031 !important;
-    box-shadow: unset !important;
+  background-image: url("@/assets/img/icons/minus-icon.png");
+  background-color: unset !important;
+  border-color: unset !important;
+  color: #f95031 !important;
+  box-shadow: unset !important;
 }
 
 .faq .accordion-button:focus {
-    border-color: unset !important;
-    box-shadow: unset !important;
+  border-color: unset !important;
+  box-shadow: unset !important;
 }
 
 .faq .accordion-body {
-    padding-top: 0 !important;
-    font-size: 14px !important;
-    line-height: 21px !important;
-    margin-right: 18%;
-    font-family: 'Poppins';
+  padding-top: 0 !important;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin-right: 18%;
+  font-family: "Poppins";
 }
 
 .faq .FAQ-button {
-    text-align: -webkit-right;
+  text-align: -webkit-right;
 }
 
 .faq .accordion-button:not(.collapsed) {
-    background-color: transparent;
-    box-shadow: unset;
+  background-color: transparent;
+  box-shadow: unset;
 }
 </style>

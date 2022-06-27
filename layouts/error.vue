@@ -39,7 +39,7 @@ export default {
   props: ['error']
 }
 </script>
-<style>
+<style scoped>
 .image-navbar {
   margin-left: 5vw;
 }
