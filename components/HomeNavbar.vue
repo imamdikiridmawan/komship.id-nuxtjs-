@@ -53,7 +53,7 @@
 
         <b-navbar-nav class="">
           <b-button variant="outline-primary" class="btn btn-outline-primary btn-sign-in">
-            Button
+            Masuk
           </b-button>
         </b-navbar-nav>
       </b-collapse>
