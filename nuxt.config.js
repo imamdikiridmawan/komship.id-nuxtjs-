@@ -1,6 +1,7 @@
 import { resolve } from 'path'
 
 export default {
+  ssr: true,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   alias: {
@@ -8,7 +9,7 @@ export default {
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'komship.id',
+    title: 'Komship - Platform Kirim Barang',
     htmlAttrs: {
       lang: 'en'
     },
@@ -19,8 +20,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/swiper@8/swiper-bundle.min.css' }
+      { rel: 'icon', type: 'image/x-icon', href: './assets/img/logo/komship.png' },
+      {
+        rel: 'stylesheet',
+        href: 'https://unpkg.com/swiper@8/swiper-bundle.min.css'
+      }
     ],
     script: [
       {
