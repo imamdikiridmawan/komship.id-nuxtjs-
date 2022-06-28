@@ -1,0 +1,86 @@
+.navbar {
+  background-color: #ffffff;
+  max-height: 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.image-navbar {
+  margin-left: 4vw;
+}
+.btn-sign-in {
+  width: 151px;
+  height: 56px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.nav-link {
+  cursor: pointer;
+}
+.nav-item {
+  padding-left: 2.5vw;
+}
+.nav-item .active {
+  color: #f95031 !important;
+}
+.nav-item .active:before {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 30px;
+  border-bottom: 2px solid #f95031;
+}
+.navbar-toggler {
+  border-color: #f95031 !important;
+  box-shadow: unset !important;
+  margin-right: 2.5vw;
+}
+.close-toggler {
+  display: none;
+}
+@media only screen and (max-width: 998px) {
+  .close-toggler {
+    display: flex;
+    float: right;
+  }
+  .close-toggler button {
+    background-color: #f95031;
+    border: none;
+  }
+  .nav-menu {
+    background-color: #f95031;
+    top: 0;
+    left: 0;
+    padding: 5vw;
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 9;
+  }
+  .navbar-nav {
+    margin-top: 3vw;
+  }
+  .nav-item a {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    margin-bottom: 1vw;
+  }
+  .nav-item .active {
+    color: #ffffff !important;
+    font-weight: 700;
+  }
+  .btn-sign-in {
+    padding: 0px !important;
+    margin: 0px 0px 0px 6px;
+    width: 200px;
+    height: 42px;
+    border-radius: 8px !important;
+    color: #dc3545 !important;
+    font-weight: 600 !important;
+    background-color: white !important;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .navbar-brand img {
+    width: 135px;
+  }
+}
