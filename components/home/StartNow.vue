@@ -50,13 +50,8 @@ export default {
       required: true
     },
     totalpartners: {
-      type: Object,
+      type: String,
       required: true
-    }
-  },
-  data () {
-    return {
-      totalPartners: null
     }
   }
 }
