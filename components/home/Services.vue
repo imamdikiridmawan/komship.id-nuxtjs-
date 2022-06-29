@@ -36,24 +36,6 @@
           </div>
         </div>
       </div>
-      <div class="service-mobile" data-aos="zoom-in" data-aos-duration="1500">
-        <!-- <carousel :autoplay="2000" :wrap-around="true">
-          <slide v-for="item in service_items" :key="item.id">
-            <div class="card">
-              <div class="card-body">
-                <img :src="item.image" class="icons"><br>
-                <span class="title-content">{{ item.title }}</span>
-                <p class="description">
-                  {{ item.description }}
-                  <string v-if="item.id === 5" style="color: #222222">
-                    *S&K berlaku.
-                  </string>
-                </p>
-              </div>
-            </div>
-          </slide>
-        </carousel> -->
-      </div>
     </div>
   </section>
 </template>
