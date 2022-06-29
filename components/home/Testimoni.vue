@@ -1,12 +1,17 @@
 <template>
   <section class="testimoni" data-aos="fade-up" data-aos-duration="1500">
     <h3 class="title">
-      <span style="color: #f95031">Komship</span> telah dipercaya oleh
-      Pebisnis dan UMKM di Indonesia
+      <span style="color: #f95031">Komship</span> telah dipercaya oleh Pebisnis
+      dan UMKM di Indonesia
     </h3>
 
     <VueSlickCarousel v-bind="settings">
-      <div v-for="item in testimoni_items" id="swiper" :key="item.id" class="content-desktop swiper">
+      <div
+        v-for="item in testimoni_items"
+        id="swiper"
+        :key="item.id"
+        class="content-desktop swiper"
+      >
         <div class="swiper-wrapper">
           <div class="card carousel__item swiper-slide">
             <div class="head">
@@ -20,30 +25,8 @@
             </div>
           </div>
         </div>
-        <!-- <div class="swiper-button-next" />
-          <div class="swiper-button-prev" /> -->
       </div>
     </VueSlickCarousel>
-
-    <div id="swiper" class="content-mobile swiper">
-      <div class="swiper-wrapper">
-        <div v-for="item in testimoni_items" :key="item.id">
-          <div class="card carousel__item swiper-slide">
-            <div class="head">
-              <div class="profile">
-                <img :src="item.image">
-              </div>
-              <span class="name">{{ item.name }}</span>
-            </div>
-            <div class="content">
-              {{ item.description }}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-button-next" />
-      <div class="swiper-button-prev" />
-    </div>
   </section>
 </template>
 
@@ -67,9 +50,24 @@ export default {
         autoplay: true,
         arrows: false,
         autoplaySpeed: 2500,
-        centerMode: true,
-        centerPadding: '20px',
-        focusOnSelect: true
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       },
       testimoni_items: [
         {

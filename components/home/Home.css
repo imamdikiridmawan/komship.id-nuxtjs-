@@ -1063,6 +1063,11 @@ h3 {
   margin-top: 50px;
 }
 
+.faq .accordion-item p {
+  font-size: 14px;
+  color: #000000;
+}
+
 .faq .header {
   display: flex;
   justify-content: center;

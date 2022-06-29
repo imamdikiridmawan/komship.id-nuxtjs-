@@ -8,10 +8,10 @@
           </h3>
         </div>
         <div class="col-md-7 description">
-          Sudah saatnya kamu beralih ke platform yang bisa memberikan berlipat
-          keuntungan dan kenyamanan dalam melakukan pengiriman barang. Komship
-          kini hadir untuk memudahkan pengiriman kamu dengan berbagai benefit
-          TANPA MINIMUM JUMLAH PENGIRIMAN.
+          Sudah saatnya kamu beralih ke platform yang bisa memberikan berlipat keuntungan
+          dan kenyamanan dalam melakukan pengiriman barang. Komship kini hadir untuk
+          memudahkan pengiriman kamu dengan berbagai benefit TANPA MINIMUM JUMLAH
+          PENGIRIMAN.
         </div>
       </div>
       <div class="row mt-5 service-desktop">
