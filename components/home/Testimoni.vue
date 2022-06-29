@@ -53,7 +53,7 @@ export default {
         focusOnSelect: true,
         responsive: [
           {
-            breakpoint: 800,
+            breakpoint: 850,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 2,
