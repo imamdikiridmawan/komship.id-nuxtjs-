@@ -36,7 +36,7 @@ export default {
         type: 'text/javascript'
       },
       {
-        src: 'https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js',
+        src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
         type: 'text/javascript'
       }
     ]
