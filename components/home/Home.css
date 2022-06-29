@@ -460,7 +460,7 @@ h3 {
   width: 90%;
   border: none;
   border-radius: 20px;
-  min-height: 230px;
+  height: 22rem;
   margin: 10px 0;
   font-family: "Poppins";
 }
@@ -1061,6 +1061,11 @@ h3 {
   padding: 10vw 0;
   height: 100%;
   margin-top: 50px;
+}
+
+.faq .accordion-item p {
+  font-size: 14px;
+  color: #000000;
 }
 
 .faq .header {
