@@ -1,4 +1,3 @@
-
 <template>
   <div id="appongkir">
     <section class="container mt-4 mb-4">
@@ -150,8 +149,8 @@ export default {
   methods: {
     formatNumber: value =>
       `${value}`.replace(/\D/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, '.'),
-    getDestination (search) {
-      axios
+    async getDestination (search) {
+      await axios
         .get(apiUrl + 'destination', {
           params: { search }
         })
