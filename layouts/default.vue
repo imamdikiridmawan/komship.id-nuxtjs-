@@ -1,12 +1,16 @@
 <template>
   <div>
-    <home-navbar />
+    <HomeNavbar />
     <Nuxt />
-    <home-footer />
+    <HomeFooter />
   </div>
 </template>
 <script>
+import HomeNavbar from '../components/HomeNavbar.vue'
+import HomeFooter from '../components/HomeFooter.vue'
+
 export default {
-  name: 'HomeLayout'
+  name: 'HomeLayout',
+  components: { HomeNavbar, HomeFooter }
 }
 </script>
