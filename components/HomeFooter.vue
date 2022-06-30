@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 <template>
   <footer style="background-color: #ffffff">
-    <div class="container-fluid">
+    <div class="container">
       <div class="col-md-12">
         <div class="row container">
           <div class="col-lg-6 col-md-8 profile">
@@ -108,7 +108,12 @@
               >
             </div>
           </div>
-          <div class="col-lg-12 col-md-4 contact">
+        </div>
+        <div class="contact d-flex justify-content-between">
+          <div class="copyright">
+            Copyright 2022 Komship.id. All rights reserved.
+          </div>
+          <div>
             <img
               :src="require('@/assets/img/icons/whatsapp-icon.png')"
               alt="whatsapp icon"
@@ -129,9 +134,6 @@
             >
           </div>
         </div>
-        <div class="copyright row d-flex">
-          Copyright 2022 Komship.id. All rights reserved.
-        </div>
       </div>
     </div>
   </footer>
@@ -151,4 +153,4 @@ export default {
   }
 }
 </script>
-<style scoped src="./HomeFooter.css"/>
+<style src="./HomeFooter.css"/>
