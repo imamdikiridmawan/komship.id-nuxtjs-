@@ -20,7 +20,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: './assets/img/logo/komship.png' },
+      { rel: 'icon', type: 'image/x-icon', href: './komship.png' },
       {
         rel: 'stylesheet',
         href: 'https://unpkg.com/swiper@8/swiper-bundle.min.css'
