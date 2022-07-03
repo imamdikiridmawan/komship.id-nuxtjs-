@@ -183,11 +183,4 @@ export default {
   }
 }
 </script>
-<style scoped src="
-            HomeNavbar.css"
-          />
-        </b-navbar-nav>
-      </b-collapse>
-    </b-container>
-  </b-navbar>
-</template>
+<style scoped src="./HomeNavbar.css" />
