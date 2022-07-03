@@ -1,5 +1,5 @@
 <template>
-  <div id="appongkir">
+  <div id="appongkir" style="margin-top: 5rem;">
     <section class="container mt-4 mb-4">
       <div class="banner">
         <span class="title">Cek Ongkos Kirim</span>
