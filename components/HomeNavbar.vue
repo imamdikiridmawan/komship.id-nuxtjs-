@@ -52,7 +52,11 @@
         </b-navbar-nav>
 
         <b-navbar-nav class="">
-          <b-button variant="outline-primary" class="btn btn-outline-primary btn-sign-in">
+          <b-button
+            variant="outline-primary"
+            class="btn btn-outline-primary btn-sign-in"
+            @click="openWindow('https://partner.komerce.id/')"
+          >
             Masuk
           </b-button>
         </b-navbar-nav>
@@ -179,4 +183,11 @@ export default {
   }
 }
 </script>
-<style scoped src="./HomeNavbar.css"/>
+<style scoped src="
+            HomeNavbar.css"
+          />
+        </b-navbar-nav>
+      </b-collapse>
+    </b-container>
+  </b-navbar>
+</template>
