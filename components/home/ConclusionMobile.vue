@@ -14,7 +14,7 @@
           class="btn btn-register-now"
           data-aos="zoom-in-up"
           data-aos-duration="1500"
-          style="font-weight: 500; font-size:16px; important!"
+          style="font-weight: 500; font-size:16px; color: #FFFFFF; background-color: #f95031; important!"
           @click="openwindow('https://partner.komerce.id/komship-register')"
         >
           Daftar sekarang
