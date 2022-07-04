@@ -492,6 +492,7 @@ h3 {
   padding: 30px 40px;
   margin-top: 15px;
   font-size: 16px;
+  font-weight: 400;
   font-family: "Poppins";
 }
 
@@ -1094,6 +1095,7 @@ h3 {
 
 .faq .item-header {
   width: 90%;
+  font-weight: 700;
 }
 
 .faq .accordion-button::after {
@@ -1118,6 +1120,7 @@ h3 {
   font-size: 14px !important;
   line-height: 21px !important;
   margin-right: 18%;
+  font-weight: 400;
   font-family: "Poppins";
 }
 
