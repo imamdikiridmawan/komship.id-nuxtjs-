@@ -1,13 +1,5 @@
 /* eslint-disable eqeqeq */
-const gtmKey = 'GTM-T38MLQS'
-
 export default () => {
-  if (!gtmKey) { // In case I have other pages not in the switch statement above
-    return
-  }
-  /*
-    ** Include Google Tag Manager
-    */
   (function (w, d, s, l, i) {
     w[l] = w[l] || []
     w[l].push({
@@ -21,5 +13,5 @@ export default () => {
     j.src =
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl
     f.parentNode.insertBefore(j, f)
-  })(window, document, 'script', 'dataLayer', 'gtmKey')
+  })(window, document, 'script', 'dataLayer', 'GTM-T38MLQS')
 }
