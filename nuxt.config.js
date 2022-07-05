@@ -85,16 +85,7 @@ export default {
     'bootstrap-vue/nuxt',
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios'
-    // '@nuxtjs/gtm'
   ],
-  // gtm: {
-  //   id: 'GTM-T38MLQS'
-  // },
-  // publicRuntimeConfig: {
-  //   gtm: {
-  //     id: process.env.GOOGLE_TAG_MANAGER_ID
-  //   }
-  // },
   // // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
