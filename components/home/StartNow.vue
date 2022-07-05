@@ -18,7 +18,7 @@
           <div class="info">
             <span class="number">{{ totalpartners }}+</span>
             <span class="label">Pebisnis online sudah bergabung dengan
-              <span style="color: #f95031">Komship</span>
+              <span style="color: #f95031; font-weight: 600;">Komship</span>
             </span>
           </div>
           <button

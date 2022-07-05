@@ -170,6 +170,7 @@ export default {
     },
     openWindow (url) {
       window.open(url)
+      window.fbq('trackCustom', 'PageView')
     },
     replace (hide, show) {
       document.getElementById(hide).style.display = 'none'
