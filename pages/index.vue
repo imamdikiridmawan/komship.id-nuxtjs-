@@ -99,7 +99,7 @@ export default {
         {
           vmid: 'og-image',
           property: 'og:image',
-          content: 'https://komship.id/img/komship.png'
+          content: '../static/komship.png'
         },
         {
           vmid: 'og-image-width',
@@ -121,9 +121,9 @@ export default {
           property: 'og:see_also',
           content: 'https://www.facebook.com/komship/'
         }
-
       ],
       link: [
+        { rel: 'icon', type: 'image/x-icon', href: './komship-lp.png' },
         {
           vmid: 'canonical',
           rel: 'canonical',

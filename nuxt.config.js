@@ -38,6 +38,33 @@ export default {
       {
         src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
         type: 'text/javascript'
+      },
+      {
+        vmid: 'ldjson-schema',
+        type: 'application/ld+json',
+        json: {
+          '@context': 'https://schema.org/',
+          '@type': 'WebSite',
+          name: 'Komship',
+          description:
+            'Komship merupakan platform layanan pengiriman yang bertujuan memudahkan kamu untuk mengirim paket yang didukung dengan metode COD atau Non-COD tanpa batas minimum pengiriman.',
+          url: 'https://komship.id/',
+          image: {
+            '@type': 'ImageObject',
+            url: 'https://komship.id/img/komship.png',
+            height: '720',
+            width: '1280'
+          },
+          sameAs: [
+            'https://www.facebook.com/komship/',
+            'https://www.instagram.com/komship/'
+          ],
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: 'https://komship.id/pencarian?q={search_term_string}',
+            'query-input': 'required name=search_term_string'
+          }
+        }
       }
     ]
   },
