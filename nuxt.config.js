@@ -43,27 +43,30 @@ export default {
         vmid: 'ldjson-schema',
         type: 'application/ld+json',
         json: {
-          '@context': 'https://schema.org/',
-          '@type': 'WebSite',
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
           name: 'Komship',
-          description:
-            'Komship merupakan platform layanan pengiriman yang bertujuan memudahkan kamu untuk mengirim paket yang didukung dengan metode COD atau Non-COD tanpa batas minimum pengiriman.',
+          legalName: 'Komship',
+          logo: 'https://komship.id/img/komship.png',
           url: 'https://komship.id/',
-          image: {
-            '@type': 'ImageObject',
-            url: 'https://komship.id/img/komship.png',
-            height: '720',
-            width: '1280'
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress:
+              'Jl. Raya Tamansari, Kompleks Karangwuni, Desa Tamansari, Karangmoncol',
+            addressLocality: 'Purbalingga',
+            postalCode: '53355',
+            addressCountry: 'ID'
+          },
+          contactPoint: {
+            '@type': 'ContactPoint',
+            contactType: 'Customer service',
+            email: 'mailto:support@komship.id',
+            telephone: '081227931840'
           },
           sameAs: [
             'https://www.facebook.com/komship/',
             'https://www.instagram.com/komship/'
-          ],
-          potentialAction: {
-            '@type': 'SearchAction',
-            target: 'https://komship.id/pencarian?q={search_term_string}',
-            'query-input': 'required name=search_term_string'
-          }
+          ]
         }
       }
     ]
