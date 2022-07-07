@@ -58,7 +58,7 @@ export default {
         {
           vmid: 'og-image',
           property: 'og:image',
-          content: '<%= required("../static/cek-ongkir.png") %>'
+          content: 'https://komship.id/cek-ongkir.png'
         },
         {
           vmid: 'og-image-width',
@@ -82,7 +82,7 @@ export default {
         }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: './cek-ongkir.png' },
+        // { rel: 'icon', type: 'image/x-icon', href: './cek-ongkir.png' },
         {
           vmid: 'canonical',
           rel: 'canonical',
