@@ -17,7 +17,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'google-site-verification', content: 'hGTK2EezU5yogKrbpT_mLKIqjfY-X_uGXHfTzsmU67I' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: './komship.png' },
