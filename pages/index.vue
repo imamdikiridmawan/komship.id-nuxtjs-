@@ -99,7 +99,7 @@ export default {
         {
           vmid: 'og-image',
           property: 'og:image',
-          content: '../static/komship.png'
+          content: 'https://komship.id/komship-lp.png'
         },
         {
           vmid: 'og-image-width',
@@ -123,7 +123,7 @@ export default {
         }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: './komship-lp.png' },
+        // { rel: 'icon', type: 'image/x-icon', href: './komship-lp.png' },
         {
           vmid: 'canonical',
           rel: 'canonical',
