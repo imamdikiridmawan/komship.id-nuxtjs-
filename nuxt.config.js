@@ -22,7 +22,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: './komship.png' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Poppins' },
       {
         rel: 'stylesheet',
         href: 'https://unpkg.com/swiper@8/swiper-bundle.min.css'
