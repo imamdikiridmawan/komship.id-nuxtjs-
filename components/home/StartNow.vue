@@ -23,7 +23,7 @@
           </div>
           <button
             class="btn btn-primary btn-register-now"
-            @click="openwindow('https://partner.komerce.id/komship-register')"
+            @click="openwindow('#Conclusion')"
           >
             Mulai Sekarang
           </button>
