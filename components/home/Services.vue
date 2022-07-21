@@ -49,6 +49,9 @@
                 <span class="paragraf4-content">
                   {{ item.paragraf4 }}
                 </span>
+                <string v-if="item.id === 6" style="color:black">
+                  TANPA MINIMUM ORDER.
+                </string>
               </p>
             </div>
           </div>
@@ -108,7 +111,7 @@ export default {
           title: 'Gratis Jemput Paket',
           image: require('@/assets/img/icons/kendaraan.png'),
           description:
-            'Cukup tunggu saja di rumah, kurir akan mendatangi lokasimu untuk mengambil paket TANPA MINIMUM ORDER.'
+            'Cukup tunggu saja di rumah, kurir akan mendatangi lokasimu untuk mengambil paket'
         }
       ]
     }
