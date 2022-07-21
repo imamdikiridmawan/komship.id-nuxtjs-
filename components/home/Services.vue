@@ -10,8 +10,8 @@
         <div class="col-md-7 description">
           Sudah saatnya kamu beralih ke platform yang bisa memberikan berlipat keuntungan
           dan kenyamanan dalam melakukan pengiriman barang. Komship kini hadir untuk
-          memudahkan pengiriman kamu dengan berbagai benefit TANPA MINIMUM JUMLAH
-          PENGIRIMAN.
+          memudahkan pengiriman kamu dengan berbagai benefit<span style="color: black;"> TANPA MINIMUM JUMLAH
+            PENGIRIMAN.</span>
         </div>
       </div>
       <div class="row mt-5 service-desktop">
@@ -28,9 +28,27 @@
               <span class="title-content">{{ item.title }}</span>
               <p class="description-content">
                 {{ item.description }}
+                <string v-if="item.id === 5" style="color:black">
+                  pengembalian COD
+                </string>
+                <span class="paragraf5-content">
+                  {{ item.paragraf5 }}
+                </span>
                 <string v-if="item.id === 5" style="color: #222222">
                   *S&K berlaku.
                 </string>
+                <string v-if="item.id === 3" style="color:black">
+                  (COD dan Non-COD)
+                </string>
+                <span class="paragraf-content">
+                  {{ item.paragraf }}
+                </span>
+                <string v-if="item.id === 4" style="color:black">
+                  cuma 2,8%
+                </string>
+                <span class="paragraf4-content">
+                  {{ item.paragraf4 }}
+                </span>
               </p>
             </div>
           </div>
@@ -65,20 +83,25 @@ export default {
           title: 'Lebih Hemat',
           image: require('@/assets/img/icons/analyst-icon.png'),
           description:
-            'Dapatkan diskon ongkos kirim MULAI dari 25% (Berlaku COD dan Non COD) lebih hemat dibandingkan yang lain.'
+          'Dapatkan diskon kirim MULAI dari 25%',
+          paragraf:
+          'Lebih hemat dibandingkan dengan yang lain'
         },
         {
           id: 4,
           title: 'Biaya COD Termurah',
           image: require('@/assets/img/icons/empty-wallet1.png'),
-          description: 'Biaya COD cuma 2,8%, Nggak pake mahal!'
+          description: 'Biaya COD',
+          paragraf4: ',ngga pake mahal !'
         },
         {
           id: 5,
           title: 'Gratis Biaya Retur',
           image: require('@/assets/img/icons/rts-icon1.png'),
           description:
-            'Khawatir kamu rugi karena retur pelanggan? Tenang, Komship bebas biaya retur atau pengembalian COD seluruh Indonesia.'
+            'Khawatir kamu rugi karena retur pelanggan? Tenang, Komship bebas biaya retur atau',
+          paragraf5:
+          ' seluruh Indonesia.'
         },
         {
           id: 6,
