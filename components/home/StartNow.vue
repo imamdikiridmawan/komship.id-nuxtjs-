@@ -12,8 +12,8 @@
             <span style="color: #f95031">Komship</span>
           </h2>
           <p class="description">
-            Dapatkan diskon ongkir mulai dari 25% dan GRATIS biaya retur
-            se-Indonesia! Pelajari lebih lanjut untuk dapat tawaran menarik
+            Dapatkan diskon ongkir <span style="color:black">mulai dari 25%</span> dan
+            <span style="color:black">GRATIS biaya retur se-Indonesia!</span> &nbsp;Pelajari lebih lanjut untuk dapat tawaran menarik
           </p>
           <div class="info">
             <span class="number">{{ totalpartners }}+</span>
