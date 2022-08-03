@@ -20,6 +20,7 @@
 <script>
 export default {
   name: 'Conclusion',
+  id: 'Conclusion1',
   props: {
     openwindow: {
       type: Function,

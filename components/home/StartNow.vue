@@ -21,12 +21,13 @@
               <span style="color: #f95031; font-weight: 600;">Komship</span>
             </span>
           </div>
-          <button
-            class="btn btn-primary btn-register-now"
-            @click="openwindow('https://partner.komerce.id/komship-register')"
-          >
-            Mulai Sekarang
-          </button>
+          <div class="button-komponen">
+            <a href="../home/Conclusion.vue">
+              <button type="button" class="btn btn-1 btn-outline-primary">
+                Hubungi kami Sekarang
+              </button>
+            </a>
+          </div>
         </div>
         <div
           class="col-md-6 image-desktop"
