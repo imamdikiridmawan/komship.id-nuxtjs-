@@ -129,6 +129,9 @@ export default {
     if (window.history.state.current === '/#feature') {
       window.scrollTo(0, 3436)
     }
+    if (window.history.state.current === '/#conclusion') {
+      window.scrollTo(0, 3525)
+    }
   },
   methods: {
     toggleClassNav (id) {
