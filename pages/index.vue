@@ -12,6 +12,7 @@
     <FeatureMobile
       :replace="replace"
     />
+    <ToConclusion />
     <Conclusion :openwindow="openWindow" />
     <ConclusionMobile :openwindow="openWindow" />
     <Testimoni />
@@ -31,6 +32,7 @@ import Conclusion from '../components/home/Conclusion.vue'
 import ConclusionMobile from '../components/home/ConclusionMobile.vue'
 import Testimoni from '../components/home/Testimoni.vue'
 import FAQ from '../components/home/FAQ.vue'
+import ToConclusion from '../components/home/toConclusion.vue'
 
 export default {
   components: {
@@ -41,6 +43,7 @@ export default {
     Flow,
     Features,
     FeatureMobile,
+    ToConclusion,
     Conclusion,
     ConclusionMobile,
     Testimoni,

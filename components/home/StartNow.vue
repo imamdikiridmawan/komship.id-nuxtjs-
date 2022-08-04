@@ -12,19 +12,19 @@
             <span style="color: #f95031">Komship</span>
           </h2>
           <p class="description">
-            Dapatkan diskon ongkir <span style="color:black">mulai dari 25%</span> dan
-            <span style="color:black">GRATIS biaya retur se-Indonesia!</span> &nbsp;Pelajari lebih lanjut untuk dapat tawaran menarik
+            Dapatkan diskon ongkir <span style="color:black; font-weight: 600;">mulai dari 25%</span> dan
+            <span style="color:black; font-weight: 600;">GRATIS biaya retur se-Indonesia!</span> &nbsp;Pelajari lebih lanjut untuk dapat tawaran menarik
           </p>
           <div class="info">
             <span class="number">{{ totalpartners }}+</span>
             <span class="label">Pebisnis online sudah bergabung dengan
-              <span style="color: #f95031; font-weight: 600;">Komship</span>
+              <span style="color: #f95031; font-weight: 500;">Komship</span>
             </span>
           </div>
           <div class="button-komponen">
-            <a href="../home/Conclusion.vue">
-              <button type="button" class="btn btn-1 btn-outline-primary">
-                Hubungi kami Sekarang
+            <a href="#toconclusion">
+              <button type="button" class="btn btn-1 btn-outline-primary" style="font-weight: 600">
+                Mulai Sekarang
               </button>
             </a>
           </div>

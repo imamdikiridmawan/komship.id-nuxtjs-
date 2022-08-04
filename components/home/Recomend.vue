@@ -20,7 +20,9 @@
             </div>
             <span class="content">
               Makin tenang kirim orderan dengan
-              <span style="color: #f95031">
+              <span
+                class="recommend-content-span"
+              >
                 gerai terbanyak dan cakupan terluas
               </span>
               di Indonesia
@@ -37,11 +39,13 @@
               <img src="@/assets/img/partials/sicepat-counter.png">
             </div>
             <span class="content">
-              Makin <span style="color: #f95031">untung</span> dan
-              <span style="color: #f95031">hemat</span> kirim orderan bahkan
-              ke pelosok Indonesia. Kirim pakai
-              <span style="color: #f95031">Cargo</span> gak kalah
-              <span style="color: #f95031">hemat</span>nya!
+              Makin
+              <span class="recommend-content-span">untung</span> dan
+              <span class="recommend-content-span">hemat</span> kirim
+              orderan bahkan ke pelosok Indonesia. Kirim pakai
+              <span class="recommend-content-span">Cargo</span> gak
+              kalah
+              <span class="recommend-content-span">hemat</span>nya!
             </span>
           </div>
         </div>
@@ -55,7 +59,9 @@
               <img src="@/assets/img/partials/idexpress-counter.png">
             </div>
             <span class="content">
-              <span style="color: #f95031">Cocok bagi pebisnis dengan paket ringan.</span>
+              <span
+                class="recommend-content-span"
+              >Cocok bagi pebisnis dengan paket ringan.</span>
               Kirim orderan makin hemat dan mantap
             </span>
           </div>
@@ -72,5 +78,4 @@ export default {
 </script>
 
 <style>
-
 </style>

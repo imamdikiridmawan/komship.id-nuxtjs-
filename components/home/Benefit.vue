@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-lg-6 content">
             Kami telah bekerjasama dengan Ekspedisi ternama yang mendukung
-            pengiriman <span style="color: #f95031">COD dan Non-COD</span>
+            pengiriman <span class="benefit-content-span">COD dan Non-COD</span>
           </div>
           <div class="col-lg-6 d-flex justify-between">
             <img
@@ -199,7 +199,7 @@
       </div>
     </div>
     <span
-      style="font-weight: 500"
+      style="font-weight: 500; font-family: 'Poppins';"
       data-aos="fade-right"
       data-aos-duration="1500"
     >*S&K berlaku</span>

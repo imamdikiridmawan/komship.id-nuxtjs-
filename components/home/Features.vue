@@ -4,7 +4,7 @@
       <h3
         data-aos="fade-up"
         data-aos-duration="1500"
-        style="font-size: 32px; text-align: -webkit-left; !important"
+        style="font-size: 32px; font-weight: 700; text-align: -webkit-left; !important"
         class="fitur"
       >
         Fitur
@@ -53,8 +53,8 @@
               </button>
               <p>
                 Data di dashboard akan semakin mudah kamu olah dengan
-                memanfaatkan menu download. Kamu tinggal pilih klasifikasi
-                data yang dibutuhkan.
+                memanfaatkan menu download. Kamu tinggal pilih klasifikasi data
+                yang dibutuhkan.
               </p>
             </div>
             <div @click="replace2('order', 'dataoto', 'kendala')">
