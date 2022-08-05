@@ -4,7 +4,7 @@
       <div class="head-feature-mobile text-center">
         <h2
           class="head-feature"
-          style="font-family: Poppins; font-size: 24px; font-weight: 700"
+          style="font-family: Poppins; font-weight: 700; font-size: 24px; font-weight: 700"
         >
           Fitur
         </h2>
@@ -169,6 +169,7 @@
         </div>
       </div>
     </div>
+    <div id="conclusion" />
   </section>
 </template>
 

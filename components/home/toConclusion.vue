@@ -1,13 +1,9 @@
 <template>
-  <div>
-    about
-  </div>
+  <section id="toconclusion" />
 </template>
+
 <script>
 export default {
-
+  name: 'toConclusion'
 }
 </script>
-<style >
-
-</style>

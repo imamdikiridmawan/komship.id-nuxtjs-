@@ -1,21 +1,24 @@
 h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 h3 {
   font-size: 32px;
   font-weight: 700;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
-
+#div3 p {
+  font-size: 14px;
+}
 .register-now {
   display: flex;
   width: 100%;
   padding-bottom: 5vw;
-  scroll-margin-top: 70px;
-  font-family: "Rubik";
+  /* scroll-margin-top: 70px; */
+  scroll-snap-margin-top: 70px;
+  font-family: "Poppins";
 }
 
 .register-now .image-desktop img {
@@ -32,29 +35,29 @@ h3 {
   line-height: 24px;
   font-weight: 500;
   padding-top: 10px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .register-now .info {
   display: flex;
   margin: 15px 0;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .register-now .info .number {
   font-size: 48px;
   font-weight: 600;
   color: #fe783a;
-  font-family: "Rubik";
+  font-family: "Poppins";
   align-self: center;
 }
 
 .register-now .info .label {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 16px 0;
   margin-left: 20px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .register-now .btn-register-now {
@@ -62,7 +65,11 @@ h3 {
   font-size: 16px;
   min-width: 231px;
   height: 60px;
-  font-family: "Rubik";
+  font-family: "Poppins";
+}
+
+.button-komponen {
+  font-weight: 600;
 }
 
 /* serviceYYY */
@@ -70,7 +77,7 @@ h3 {
 .service {
   padding-top: 5vw;
   background-color: #f8f9fa;
-  scroll-margin-top: 70px;
+  scroll-snap-margin-top: 70px;
 }
 
 .service-desktop {
@@ -87,7 +94,7 @@ h3 {
   display: flex;
   text-align: center;
   justify-content: center;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .service .description {
@@ -95,7 +102,7 @@ h3 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .service .content {
@@ -104,22 +111,22 @@ h3 {
   padding: 0 10px;
   min-height: 230px;
   margin-bottom: 50px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .service .title-content {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .service .description-content {
   color: #828282;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   margin-top: 10px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .service .icons {
@@ -142,12 +149,18 @@ h3 {
   padding: 10px 20px;
   border-radius: 30px;
   border: none;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
-
+.card-body {
+  padding: 0px;
+}
+.list-benefit {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Poppins";
+}
 .benefit .list-benefit::marker {
   color: #f95031;
-  font-family: "Rubik";
 }
 
 .benefit .logo {
@@ -156,11 +169,14 @@ h3 {
 }
 
 .benefit .content {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
-
+.benefit-content-span {
+  color: #f95031;
+  font-size: 18px;
+}
 .benefit-table-desktop {
   margin-top: 50px;
   text-align: center;
@@ -174,18 +190,18 @@ h3 {
   padding: 0;
   margin-bottom: 10px;
   overflow-x: hidden;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .benefit-table-desktop .head {
   background-color: #fba63c;
-  font-family: "Rubik";
+  font-family: "Poppins";
   font-size: 20px;
 }
 
 .benefit-table-desktop .subhead {
   background-color: #ff6a3a;
-  font-family: "Rubik";
+  font-family: "Poppins";
   font-size: 20px;
 }
 
@@ -203,7 +219,7 @@ h3 {
   padding: 4px 12px;
   font-size: 16px;
   font-weight: 500;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .benefit-table-mobile .btn-menu:hover {
@@ -240,9 +256,9 @@ h3 {
   min-height: 100px;
   border-radius: 0px 0px 20px 20px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .flow {
@@ -257,7 +273,8 @@ h3 {
 .flow h3 {
   max-width: 450px;
   padding: 30px 0;
-  font-family: "Rubik";
+  font-weight: 700;
+  font-family: "Poppins";
   letter-spacing: 0.7px;
 }
 
@@ -267,7 +284,7 @@ h3 {
   background-color: #ffece9;
   border: 1px solid #ff6a3a;
   border-radius: 50%;
-  font-family: "Rubik";
+  font-family: "Poppins";
   padding-top: 1.5vh;
 }
 
@@ -277,7 +294,7 @@ h3 {
   display: block;
   text-align: center;
   margin-top: 6px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .flow .image {
@@ -295,7 +312,7 @@ h3 {
 .flow .description {
   display: flex;
   justify-content: center;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .flow .description span {
@@ -305,7 +322,7 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   color: #ff6a3a;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .feature {
@@ -324,19 +341,19 @@ h3 {
   width: 70%;
   margin: auto 0;
   z-index: 1;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .feature .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #f95031;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .feature .description {
   font-size: 14px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .image-feature {
@@ -354,6 +371,7 @@ h3 {
   color: #c2c2c2;
   font-weight: 500;
   border-radius: 8px;
+  font-family: "Poppins";
 }
 
 .btn-feature:focus {
@@ -363,7 +381,8 @@ h3 {
 
 .subhead-feature {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "Poppins";
 }
 
 #arrow-btn:hover .arrow-feature {
@@ -403,7 +422,6 @@ h3 {
 .image-feature-unggulan img {
   max-width: 100%;
 }
-
 .conclusion {
   max-height: 275px;
   margin-top: 63px;
@@ -417,22 +435,22 @@ h3 {
   text-align: center;
   margin: auto 0;
   font-weight: 600;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .conclusion .content .title {
   font-size: 32px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .conclusion .content .btn {
   font-weight: 600;
   font-size: 16px;
   padding: 16px 24px;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
-.btn-check:focus+.btn-primary,
+.btn-check:focus + .btn-primary,
 .btn-primary:focus {
   box-shadow: unset;
 }
@@ -450,10 +468,11 @@ h3 {
 .testimoni .title {
   max-width: 624px;
   margin: 20px auto;
+  font-weight: 700;
   margin-top: 50px;
   margin-bottom: 30px;
   text-align: center;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .testimoni .card {
@@ -462,10 +481,12 @@ h3 {
   border-radius: 20px;
   height: 22rem;
   margin: 10px 0;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .testimoni .card .head {
+  font-size: 20px;
+  font-weight: 500;
   background-color: #ff6a3a;
   border-radius: 20px 20px 0px 0px;
   height: 80px;
@@ -493,7 +514,7 @@ h3 {
   margin-top: 15px;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .testimoni .card .name {
@@ -502,7 +523,7 @@ h3 {
   margin: auto 30px;
   padding-top: 10px;
   text-align: left;
-  font-family: "Rubik";
+  font-family: "Poppins";
 }
 
 .testimoni .carousel__prev,
@@ -518,26 +539,26 @@ h3 {
   right: 23%;
 }
 
-.testimoni .carousel__slide>.carousel__item {
+.testimoni .carousel__slide > .carousel__item {
   transform: scale(1);
   opacity: 0.5;
   transition: 0.5s;
 }
 
-.testimoni .carousel__slide--visible>.carousel__item {
+.testimoni .carousel__slide--visible > .carousel__item {
   opacity: 1;
   transform: rotateY(0);
 }
 
-.testimoni .carousel__slide--next>.carousel__item {
+.testimoni .carousel__slide--next > .carousel__item {
   transform: scale(0.9) translate(-10px);
 }
 
-.testimoni .carousel__slide--prev>.carousel__item {
+.testimoni .carousel__slide--prev > .carousel__item {
   transform: scale(0.9) translate(10px);
 }
 
-.testimoni .carousel__slide--active>.carousel__item {
+.testimoni .carousel__slide--active > .carousel__item {
   transform: scale(1.1);
 }
 
@@ -551,6 +572,83 @@ h3 {
 
 #conclusion-mobile {
   display: none;
+}
+
+/* FAQ */
+
+.faq {
+  background-color: #f8f9fa;
+  padding: 10vw 0;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.faq .accordion-item p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.faq .header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3vw;
+}
+
+.faq .header-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.faq .accordion-item {
+  border-radius: 8px !important;
+  border: 1px solid #e2e2e2 !important;
+  margin-bottom: 10px;
+}
+
+.faq .accordion-button {
+  border-radius: 8px !important;
+  color: #f95031 !important;
+}
+
+.faq .item-header {
+  width: 90%;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.faq .accordion-button::after {
+  background-image: url("@/assets/img/icons/plus-icon.png");
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: url("@/assets/img/icons/minus-icon.png");
+  background-color: unset !important;
+  border-color: unset !important;
+  color: #f95031 !important;
+  box-shadow: unset !important;
+}
+
+.faq .accordion-button:focus {
+  border-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.faq .accordion-body {
+  padding-top: 0 !important;
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin-right: 18%;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+
+.faq .FAQ-button {
+  text-align: -webkit-right;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: unset;
 }
 
 @media (max-width: 1199.98px) {
@@ -569,9 +667,6 @@ h3 {
     height: 50px;
   }
 
-  /* .service .description {
-    font-size: 14px;
-  } */
   .service .content {
     min-height: 255px;
   }
@@ -606,14 +701,8 @@ h3 {
 }
 
 @media (max-width: 991.98px) {
-  h2 {
-    font-size: 32px;
-    font-weight: 600;
-  }
-
   h3 {
     font-size: 28px;
-    font-weight: 600;
   }
 
   .register-now .title {
@@ -622,8 +711,6 @@ h3 {
 
   .register-now .info .number {
     font-size: 34px;
-    /* font-weight: 600;
-    color: #FE783A; */
   }
 
   .register-now .info .label {
@@ -632,7 +719,6 @@ h3 {
   }
 
   .register-now .description {
-    font-size: 14px;
     width: 100%;
   }
 
@@ -685,10 +771,6 @@ h3 {
 @media (max-width: 767.98px) {
   #feature-mobile {
     display: none;
-  }
-
-  h2 {
-    font-size: 28px;
   }
 
   h3 {
@@ -799,10 +881,16 @@ h3 {
 
   .benefit-table-mobile .head {
     background-color: #fba63c;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .benefit-table-mobile .subhead {
     background-color: #ff6a3a;
+    font-family: "poppins";
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .testimoni .content-desktop {
@@ -835,7 +923,7 @@ h3 {
   }
 
   .testimoni .card .name {
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 0;
     margin-left: 20px;
   }
@@ -882,7 +970,7 @@ h3 {
   }
 
   .subhead-feature {
-    font-family: "Rubik";
+    font-family: "Poppins";
     font-weight: 600;
     font-size: 18px;
     color: #f95031;
@@ -893,13 +981,9 @@ h3 {
   }
 
   .content-feature {
-    font-family: "Rubik";
+    font-family: "Poppins";
     font-weight: 400;
-    font-size: 14px;
-  }
-
-  h2 {
-    font-size: 26px;
+    font-size: 12px;
   }
 
   h3 {
@@ -930,7 +1014,7 @@ h3 {
   }
 
   .flow .content-mobile .image-mobile {
-    width: 50%;
+    width: 40%;
   }
 
   .flow .content-mobile .image-mobile img {
@@ -939,8 +1023,9 @@ h3 {
 
   .flow .content-mobile .description-mobile {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 10px;
+    font-family: "Poppins";
     color: #ff6a3a;
     width: 50%;
     display: flex;
@@ -993,9 +1078,11 @@ h3 {
     background-repeat: no-repeat;
     background-position: bottom right;
   }
-
+  #toconclusion {
+    height: 40px;
+  }
   #conclusion-mobile .content-mobile {
-    padding-top: 40px;
+    padding-top: 20px;
     width: 60%;
     text-align: -webkit-center;
     font-size: 16px;
@@ -1004,7 +1091,9 @@ h3 {
   .conclusion {
     display: none;
   }
-
+  .swiper-wrapper {
+    text-align: -webkit-center;
+  }
   .swiper-button-next {
     right: 20px;
     transform: rotate(90deg);
@@ -1017,12 +1106,11 @@ h3 {
 }
 
 @media (max-width: 480px) {
-  h2 {
-    font-size: 22px;
+  .register-now .info .number {
+    font-size: 24px;
   }
-
-  h3 {
-    font-size: 20px;
+  .button-komponen {
+    text-align: -webkit-center;
   }
 
   .feature .title-content {
@@ -1045,7 +1133,39 @@ h3 {
   .benefit .logo {
     width: 70px;
   }
-
+  .benefit .content {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .benefit-content-span {
+    font-size: 16px;
+  }
+  .benefit-head {
+    padding: 10px;
+  }
+  .list-benefit {
+    font-size: 14px;
+  }
+  .recommend {
+    text-align: -webkit-center;
+  }
+  .recommend h3 {
+    width: 60%;
+  }
+  .recommend .card .content {
+    font-weight: 700;
+  }
+  .recommend-content-span {
+    font-weight: 700;
+    color: #f95031;
+  }
+  .flow h3 {
+    max-width: 80%;
+  }
+  .testimoni .title {
+    font-weight: 600;
+    font-size: 16px;
+  }
   .swiper-button-next {
     right: 20px;
     transform: rotate(90deg);
@@ -1055,80 +1175,14 @@ h3 {
     left: 20px;
     transform: rotate(90deg);
   }
-}
-
-/* FAQ */
-
-.faq {
-  background-color: #f8f9fa;
-  padding: 10vw 0;
-  height: 100%;
-  margin-top: 50px;
-}
-
-.faq .accordion-item p {
-  font-size: 14px;
-  color: #000000;
-}
-
-.faq .header {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3vw;
-}
-
-.faq .header-title {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.faq .accordion-item {
-  border-radius: 8px !important;
-  border: 1px solid #e2e2e2 !important;
-  margin-bottom: 10px;
-}
-
-.faq .accordion-button {
-  border-radius: 8px !important;
-  color: #f95031 !important;
-}
-
-.faq .item-header {
-  width: 90%;
-  font-weight: 700;
-}
-
-.faq .accordion-button::after {
-  background-image: url("@/assets/img/icons/plus-icon.png");
-}
-
-.faq .accordion-button:not(.collapsed)::after {
-  background-image: url("@/assets/img/icons/minus-icon.png");
-  background-color: unset !important;
-  border-color: unset !important;
-  color: #f95031 !important;
-  box-shadow: unset !important;
-}
-
-.faq .accordion-button:focus {
-  border-color: unset !important;
-  box-shadow: unset !important;
-}
-
-.faq .accordion-body {
-  padding-top: 0 !important;
-  font-size: 14px !important;
-  line-height: 21px !important;
-  margin-right: 18%;
-  font-weight: 400;
-  font-family: "Rubik";
-}
-
-.faq .FAQ-button {
-  text-align: -webkit-right;
-}
-
-.faq .accordion-button:not(.collapsed) {
-  background-color: transparent;
-  box-shadow: unset;
+  .faq .header-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .faq .item-header {
+    font-size: 14px;
+  }
+  .faq .accordion-item p {
+    font-size: 12px;
+  }
 }

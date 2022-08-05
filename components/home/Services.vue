@@ -10,7 +10,7 @@
         <div class="col-md-7 description">
           Sudah saatnya kamu beralih ke platform yang bisa memberikan berlipat keuntungan
           dan kenyamanan dalam melakukan pengiriman barang. Komship kini hadir untuk
-          memudahkan pengiriman kamu dengan berbagai benefit<span style="color: black;"> TANPA MINIMUM JUMLAH
+          memudahkan pengiriman kamu dengan berbagai benefit<span style="color: black; font-weight: 600;"> TANPA MINIMUM JUMLAH
             PENGIRIMAN.</span>
         </div>
       </div>

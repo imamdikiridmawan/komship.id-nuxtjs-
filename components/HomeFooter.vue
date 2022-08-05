@@ -77,9 +77,9 @@
                 </router-link>
               </li>
               <li>
-                <router-link to="faq" @click="resetNavBarActive()">
+                <a :href="getLink()" rel="noopener noreferrer" @click="resetNavBarActive()">
                   FAQ
-                </router-link>
+                </a>
               </li>
             </ul>
           </div>
@@ -141,6 +141,21 @@
 <script>
 export default {
   methods: {
+    getLink () {
+      // const routes = this.$route.path.split('/')
+      // if (process.client) {
+      //   console.log(window.location.origin)
+      //   let link = ''
+      //   console.log(routes)
+      //   if (routes[1] !== '') {
+      //     link = window.location.origin
+      //   } else {
+      //   // link = '/' + '#faq'
+      //   }
+      if (process.client) {
+        return window.location.origin + '#faq'
+      }
+    },
     openLink (link) {
       window.open(link)
     },
