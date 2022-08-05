@@ -21,6 +21,7 @@
 }
 .nav-item .active {
   color: #f95031 !important;
+  font-weight: 500;
 }
 .nav-item .active:before {
   content: "";

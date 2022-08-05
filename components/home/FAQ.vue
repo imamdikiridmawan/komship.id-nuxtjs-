@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
 <template>
-  <section class="faq">
+  <section id="faq" class="faq">
     <div class="container">
       <div class="header">
         <h2 class="header-title">
