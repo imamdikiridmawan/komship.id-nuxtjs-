@@ -4,7 +4,7 @@
 
 @charset "utf-8";
 @import "../../node_modules/bootstrap/dist/css/bootstrap.css";
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900'); */
 *
 {
 	margin: 0;
