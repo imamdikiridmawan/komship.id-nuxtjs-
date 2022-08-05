@@ -374,7 +374,7 @@ h3 {
   font-family: "Poppins";
 }
 
-.btn-feature:focus {
+.btn-feature:focus, .actived {
   border: solid 1px #f95031;
   color: #f95031;
 }

@@ -12,19 +12,21 @@
       <div class="d-flex mb-5">
         <button
           id="div1"
-          class="btn-feature m-2 active"
+          class="btn-feature m-2"
+          :class="isActive === 'btn1' ? 'actived': ''"
           type="button"
           style="display: block"
-          @click="replace('mbl-tambahan', 'mbl-unggulan')"
+          @click="replace('mbl-tambahan', 'mbl-unggulan'); onActive('btn1')"
         >
           Fitur Unggulan
         </button>
         <button
           id="div2"
           class="btn-feature px- m-2"
+          :class="isActive === 'btn2' ? 'actived': ''"
           type="button"
           style="display: block"
-          @click="replace('mbl-unggulan', 'mbl-tambahan')"
+          @click="replace('mbl-unggulan', 'mbl-tambahan'); onActive('btn2')"
         >
           Fitur Tambahan
         </button>
@@ -180,6 +182,16 @@ export default {
     replace: {
       type: Function,
       required: true
+    }
+  },
+  data () {
+    return {
+      isActive: 'btn1'
+    }
+  },
+  methods: {
+    onActive (str) {
+      this.isActive = str
     }
   }
 }

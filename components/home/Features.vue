@@ -12,19 +12,21 @@
       <div class="d-flex mb-5">
         <button
           id="div1"
-          class="btn-feature m-2 active"
+          class="btn-feature m-2 "
+          :class="isActive === 'btn1' ? 'actived': ''"
           type="button"
           style="display: block"
-          @click="replace('div4', 'div3')"
+          @click="replace('div4', 'div3'); onActive('btn1')"
         >
           Fitur Unggulan
         </button>
         <button
           id="div2"
-          class="btn-feature px- m-2"
+          class="btn-feature m-2 "
+          :class="isActive === 'btn2' ? 'actived': ''"
           type="button"
           style="display: block"
-          @click="replace('div3', 'div4')"
+          @click="replace('div3', 'div4'); onActive('btn2')"
         >
           Fitur Tambahan
         </button>
@@ -138,6 +140,7 @@ export default {
   },
   data () {
     return {
+      isActive: 'btn1',
       feature_items: [
         {
           id: 1,
@@ -161,6 +164,11 @@ export default {
           image: require('@/assets/img/partials/top-admin.svg')
         }
       ]
+    }
+  },
+  methods: {
+    onActive (str) {
+      this.isActive = str
     }
   }
 }
