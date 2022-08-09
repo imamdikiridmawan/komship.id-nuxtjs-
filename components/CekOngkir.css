@@ -26,6 +26,11 @@ body {
     height: 100%;
     font-weight: 600;
 }
+/* @media screen and(min-width: 320px) and (max-width: 768px) {
+    .btn-cek-ongkir {
+        height: 100%;
+    }
+} */
 .btn-primary:focus {
     box-shadow: unset;
 }
