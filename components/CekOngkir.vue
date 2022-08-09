@@ -45,7 +45,7 @@
                 <span class="input-group-text label-weight">Kg</span>
               </div>
             </div>
-            <p style="font-size: 12px; color: '#828282'; margin-bottom: 0;">
+            <p style="font-size: 10px; color: '#828282'; margin-bottom: 0;">
               {{ text }}
             </p>
           </div>
