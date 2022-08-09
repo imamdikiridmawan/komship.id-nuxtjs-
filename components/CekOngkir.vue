@@ -45,8 +45,11 @@
                 <span class="input-group-text label-weight">Kg</span>
               </div>
             </div>
+            <p style="font-size: 12px; color: '#828282'; margin-bottom: 0;">
+              {{ text }}
+            </p>
           </div>
-          <div class="col-lg-2 mb-2 d-flex justify-content-end">
+          <div class="col-lg-2 mb-4 d-flex justify-content-end">
             <button class="btn btn-primary btn-cek-ongkir" @click="calculate()">
               <div
                 v-if="loadingCekOngkir"
@@ -140,7 +143,8 @@ export default {
       weight: null,
       isCekOngkir: false,
       loadingCekOngkir: false,
-      itemsCekOngkir: null
+      itemsCekOngkir: null,
+      text: 'Berat <1kg gunakan titik, contoh; 400 gr = 0.4 kg'
     }
   },
   mounted () {
