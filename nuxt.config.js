@@ -2,7 +2,6 @@ import { resolve } from 'path'
 
 export default {
   ssr: true,
-  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   alias: {
     '@': resolve(__dirname, './')
@@ -16,8 +15,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
       {
         name: 'google-site-verification',
         content: 'hGTK2EezU5yogKrbpT_mLKIqjfY-X_uGXHfTzsmU67I'

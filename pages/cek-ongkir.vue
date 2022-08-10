@@ -16,8 +16,7 @@ export default {
         {
           vmid: 'description',
           name: 'description',
-          content:
-            'Cek ongkos kirim secara cepat & akurat dari berbagai ekspedisi (JNE, SiCepat, ID Express). Dapat diskon loh jika kirim pakai Komship.'
+          content: 'Cek ongkos kirim secara cepat & akurat dari berbagai ekspedisi (JNE, SiCepat, ID Express). Dapat diskon loh jika kirim pakai Komship.'
         },
         {
           vmid: 'keywords',
